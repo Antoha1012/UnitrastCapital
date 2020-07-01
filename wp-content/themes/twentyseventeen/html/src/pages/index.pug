@@ -1,0 +1,33 @@
+extends ../layouts/base.pug
+
+//- Page-Specific Block Imports
+include ../blocks/index-bill/index-bill.pug
+include ../blocks/slidebackground/slidebackground.pug
+include ../blocks/index-slider/index-slider.pug
+include ../blocks/calc-yield/calc-yield.pug
+include ../blocks/how/how.pug
+include ../blocks/steps/steps.pug
+include ../blocks/howsFirst/howsFirst.pug
+include ../blocks/press-index/press-index.pug
+include ../blocks/relevant/relevant.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/newspaper/newspaper.pug
+include ../blocks/index-about/index-about.pug
+//- TODO: add code here
+
+block page 
+   +header
+   +index-slider
+   +index-bill
+   +howsFirst
+   +slidebackground
+   +steps
+   +calc-yield
+   +how(data.how)
+   +relevant(data.relevant)
+   +newspaper
+   +index-about
+   +how-second
+   +bottom-form
+   +footer
+   +footer-bottom

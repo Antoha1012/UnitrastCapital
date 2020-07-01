@@ -1,0 +1,33 @@
+//-
+	name: how-we-are-working-deal
+	description: Markup for the how we are working deal block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin how-we-are-working-deal(props = {})
+	.how-we-are-working-deal
+		.container
+			.row
+				.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+					.about-china__blog
+						a.how-we-are-working-china__btn(href="") Услуги
+						h2.about-china__tittle 
+							| Сопровождение вашей
+							br
+							| сделки по покупке
+						p.about-china__subtittle При продаже инвестиционного пая Вам необходимо иметь (открыть, если нет) банковский счет, куда будут перечислены средства от погашения пая. Затем Вы подаете заявку на
+						.about-china__page
+							button.about-china__knopka открыть схему безопасной сделки
+								svg.svg-icon.icon-contacts
+									use(xlink:href='./assets/img/contact.svg#contacts')
+				.d-none.d-lg-block.col-lg-2.d-xl-block.col-xl-2
+					.about-china__info
+						p.about-china__names Алексей Иванов
+						p.about-china__information  Руководитель департамента управления бизнеса
+				.d-none.d-lg-block.col-lg-4.d-xl-block.col-xl-4
+					.about-china__images
+						img.about-china__man(src="./assets/img/3e7a68fc37eaed08c47cc7264c4a8b41.png", alt="")
+				
+			.how-we-are-working-deal__footer-block
+				p.how-we-are-working-deal__footer-text Проведение полного цикла сдлеки мы берем на себя
+				a.index-bill__button.button.button_transparent(href="https://unitrust.capital/request/consult" data-modal="" data-goal="success_main_order" data-goal-click="click_button_order") Оставить заявку

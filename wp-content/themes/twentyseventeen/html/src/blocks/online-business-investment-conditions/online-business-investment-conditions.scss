@@ -1,0 +1,55 @@
+/**
+ * Styles for the conditions block.
+ */
+.online-business-investment-conditions {
+    &__title {
+        font-size: 24px;
+        color: #253750;
+        margin-bottom: 50px;
+    }
+
+    .arrow-up {
+        font-size: 10px;
+        width: 7px;
+        height: 11px;
+        margin-left: 8px;
+        color: #3EA6E7;
+        cursor: pointer;
+    }
+
+    #read_more,
+    #read_more-second,
+    #read_more-third {
+        font-size: 14px;
+        color: #3EA6E7;
+        cursor: pointer;
+        display: inline;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        margin-left: 5px;
+        clip: rect(0 0 0 0);
+    }
+
+    #hidden,
+    #hidden-second,
+    #hidden-third {
+        font-size: 14px;
+        color: #3EA6E7;
+        cursor: pointer;
+        display: inline;
+    }
+
+    #read,
+    #read-second,
+    #read-third {
+        display: none;
+    }
+
+    #hidden,
+    #hidden-second,
+    #hidden-third {
+        cursor: pointer;
+        display: none;
+    }
+}

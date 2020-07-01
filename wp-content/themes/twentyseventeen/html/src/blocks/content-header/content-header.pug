@@ -1,0 +1,37 @@
+//-
+	name: content-header
+	description: Markup for the content header block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin content-header(props = {}, mod)
+	.content-header(class=`${mod ? 'content-header--' + mod : ''}`)
+		.content-header__bg
+		.content-header__container
+			.content-header__top
+				.row
+					.column.large-12
+						.content-header__breadcrumbs
+							.breadcrumbs
+								img.content-header__img(src="./assets/img/about-us/7ceec664da9c24a33f5508784612b6bf.png", alt="")
+								ul.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+									li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+										a.breadcrumbs__link(href='http://lexus24v.beget.tech/index.html', itemprop='item')
+											span(itemprop='name')= props.title
+											meta(itemprop='position', content='1')
+									li.breadcrumbs__item.breadcrumbs__item_delimiter= props.breadcrumbs
+									li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+										span(itemprop='name')= props.subtitle
+						.content-header__heading
+							h1= props.headear
+			.content-header__bottom
+				.content-header__menu
+					.content-header__menu-scroll
+						.row
+							.column.large-12
+								.scrollable-menu.scrollable-menu_dark
+									ul.scrollable-menu__list
+										each val in props.item
+											li.scrollable-menu__list-item
+												a.scrollable-menu__link(href= val.links)
+													span.scrollable-menu__link-text= val.texts

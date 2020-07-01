@@ -1,0 +1,58 @@
+//-
+	name: contract
+	description: Markup for the contract block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin contract(props = {}, activeIndex)
+	.contract
+		.top
+			.row
+				.column.large-12
+					.top__content
+						h2.top__title
+							| Документы
+						.top__container
+							.top__info
+								.top__text.text Мы придерживаемся принципов прозрачности и открытости нашего бизнеса, поэтому Вы всегда можете ознакомиться с оригиналами всех правоустанавливающих документов в офисе компании
+							.top__action
+								a.top__button.button.button_transparent(href='/request/consult') Бесплатная консультация
+		.layout__content
+			.row
+				.column.large-12
+					.disclosure-page
+						form.disclosure-page__form(action='', data-document-selector='')
+							.disclosure-page__form-label
+								label.label(for='CategorySelectorForm_categories') Выберите подраздел
+							.disclosure-page__form-input
+								select#CategorySelectorForm_categories
+									option(value='information-disclosure.html') Уставные документы
+									option(value='dogovor.html', selected) Договор на оказание услуг
+									option(value='elektronnye-torgovye-ploshchadki.html') Электронные торговые площадки
+									option(value='rekvizity.html') Реквизиты
+						.disclosure-page__content
+							ul.disclosure-page__document-list
+								a.disclosure-page-linkall(href='#modal')
+									li.disclosure-page__document-item
+										.disclosure-page__download_cursor
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension PDF
+										.disclosure-page__document-info
+											span.disclosure-page__name Федеральный закон №127-ФЗ «О несостоятельности (банкротстве)» от 26.10.2002 г.
+											.disclosure-page__description
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_file(href='/media/Document/Document/2019-09-19/ Минэкономразвития от 23.07.2015.pdf', target='_blank')
+										span.disclosure-page__icon.doc-icon
+											span.doc-icon__extension pdf
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='/media/Document/Document/2019-09-19/ Минэкономразвития от 23.07.2015.pdf', target='_blank')
+											| Приказ Минэкономразвития России от 23.07.2015 №495
+										.disclosure-page__description
+											| Об утверждении порядка проведения торгов в электронной форме по продаже имущества или предприятия должников в ходе процедур, применяемых в деле о банкротстве, требований к электронным площадкам...
+										img.disclosure-page__logo(src='', alt='')
+							.disclosure-page__navigator
+								ul.disclosure-page__navigator-list
+									li.disclosure-page__navigator-item
+										each val, index in props.items
+											a.disclosure-page__navigator-link(href=val.link, data-document-link=index-1, class=`${activeIndex == index ? '_active' : ''}`)!= val.text

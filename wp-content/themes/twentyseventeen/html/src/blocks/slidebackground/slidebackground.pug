@@ -1,0 +1,160 @@
+//-
+    name: slidebackground
+    description: Markup for the slidebackground block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin slidebackground(props = {})
+    .slidebackground
+        .index-about__slider-background
+            .row
+                .column
+                    .index-about__head
+                        ul.index-about__slider.index-about-slider(data-about-video-slider='')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео о рынке
+                                        h2.index-about__title-slider 
+                                            | С чем мы работаем
+                                            br
+                                            | и как устроен IT-бизнес?
+                                        span.index-about__text-sub Владельцы бизнеса в интернете с каждым годом увеличивают стоимость своих онлайн-активов и уровень дохода. Сегодня рынок IT-технологий измеряются уже триллионами долларов. И мы
+                                            br
+                                            | знаем, как заработать свою долю прибыли.
+                                        a.interfin__btn.abouts(href="") Что такое IT-бизнес?
+                                            i.fas.fa-chevron-right.calc-abouts
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=uYbjtRfeHNs', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/uYbjtRfeHNs/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Как устроены торги по банкротству?
+                                        span.index-about__text-sub
+                                            | В данном видео на нескольких простых примерах мы объясним Вам, как
+                                            | устроены торги, на которых реализуется имущество банкротов, что
+                                            | необходимо для участия, и как на этом зарабатывает компания...
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=yROd-4dBNk8', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/yROd-4dBNk8/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Новогодний фуршет Юнитраст Кэпитал
+                                        span.index-about__text-sub
+                                            | В преддверии новогодних праздников компания Юнитраст Кэпитал провела
+                                            | мероприятие, посвященное подведению итогов года.
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=otJCB6bTz20', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/otJCB6bTz20/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Итоги 2019 года
+                                        span.index-about__text-sub
+                                            | Выступление директора департамента инвестиционного консалтинга,
+                                            | Константина Ихтейман. Подведение итогов работы компании Юнитраст
+                                            | Кэпитал за 2019 год.
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=HqgSOmQKH1o', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/HqgSOmQKH1o/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Юнитраст Кэпитал - знакомство с компанией
+                                        span.index-about__text-sub
+                                            | Ознакомительный ролик о департаменте инвестиционного консалтинга
+                                            | Юнитраст Кэпитал.
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=0W0krPh85OM', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/0W0krPh85OM/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Конференция "Инвестиции 2019"
+                                        span.index-about__text-sub
+                                            | Отчетное видео о состоявшейся в Москве конференции "Инвестиции
+                                            | 2019". В качестве хэдлайнера и генерального спонсора
+                                            | мероприятия выступила компания Юнитраст Кэпитал - профессиональный
+                                            | участни...
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=mzX7lLWrjaY', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/mzX7lLWrjaY/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Конференция "Инвестиции 2019"
+                                        span.index-about__text-sub
+                                            | Презентация проектов с высокой доходностью от руководителя
+                                            | тепартамента инвестиционного консалтинга Руслана Дьякону
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=jhdNa-JdiTc', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/jhdNa-JdiTc/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Российская неделя инвесторов
+                                        span.index-about__text-sub
+                                            | 23-24 апреля в Москве прошла Российская неделя инвесторов,
+                                            | хэдлайнером и генеральным спонсором которой выступила компания
+                                            | Юнитраст Кэпитал.
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=1ycbFdIehhk', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/1ycbFdIehhk/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                            li.index-about-slider__item
+                                .index-about-slider__wrapper
+                                    .index-about__text-wrapper
+                                        .index-about__caption.caption Видео
+                                        h2.index-about__title-slider
+                                            | Бизнес-фуршет "1 год Юнитраст Кэпитал"
+                                        span.index-about__text-sub
+                                            | 12 июля, в башне «Империя» в Москва-Сити, компания Юнитраст Кэпитал
+                                            | отпраздновала свой день рождения, на который были приглашены
+                                            | партнёры, а также действующие и потенциальные инвесторы. Как ...
+                                    a.index-about__preview-wrapper(href='https://www.youtube.com/watch?v=Gfr_USFPBtk', data-fancybox='', target='_blank', rel='nofollow noreferrer noopener')
+                                        span.index-about__video-preview(style="background-image: url('https://img.youtube.com/vi/Gfr_USFPBtk/maxresdefault.jpg')")
+                                        span.index-about__play
+                                            svg.svg-icon.icon-play
+                                                use(xlink:href='./assets/img/sprite.svg#play')
+                        .index-about__arrows
+                            ul.arrows-slider
+                                li.arrows-slider__item.arrows-slider__left(data-about-index-left='')
+                                    a.arrows-slider__link(href='javascript:void(0)')
+                                        span.arrows-slider__icon
+                                            span.arrow__left.svg-icon.icon-left-arrow                                                
+                                li.arrows-slider__item.arrows-slider__right(data-about-index-right='')
+                                    a.arrows-slider__link(href='javascript:void(0)')
+                                        span.arrows-slider__icon
+                                            span.arrow__right.svg-icon.icon-left-arrow                                          
+                                                                

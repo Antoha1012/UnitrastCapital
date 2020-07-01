@@ -1,0 +1,72 @@
+//-
+    name: media-publications-about
+    description: Markup for the media publications about block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin about-media-publications(props = {})
+    .about-media-publications
+        .row
+            .column
+                .media
+                    .media__wrapper
+                        .media__caption.caption МЕДИА
+                        h2.media__title Публикации в СМИ
+                        .media__text.text Статьи о нашей компании выходят в ведущих российских деловых, банковских и финансовых изданиях
+                        ul.media__image-list
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/bank-deal.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/bank-tech.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/bankiros.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/brodude.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/finversia.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/invest-future.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/mainfin.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/rambler.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/vc-ru.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/banki.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/planet-today.png')
+                            li.media__image-item
+                                img.media__image(src='https://unitrust.capital/static/images/media/nbj.png')
+                    .media__container
+                        ul.media__list.media-list(data-media-slider='')
+                            li.media-list__item
+                                a.media-item(href='https://www.kommersant.ru/doc/2713252', target='_blank', rel='nofollow noreferrer noopener')
+                                    span.media-item__container
+                                    span.media-item__img-wrapper
+                                        img.media-item__label(src='./assets/img/about-us/komersant.png' alt='./assets/img/about-us/komersant.png' width = "186px")
+                                        span.media-item__wrapper
+                                            span.media-item__date 14.09.2015
+                                            span.media-item__description.text Самые эффективные управляющие компании (в 2014 году)
+                                    span.media-item__preview-wrapper
+                                        img.media-item__preview(src='./assets/img/about-us/komersant-text.png', alt='./assets/img/about-us/komersant-text.png')
+                            li.media-list__item
+                                a.media-item(href='https://www.vedomosti.ru/finance/articles/2015/07/30/602771-nachalas-rasprodazha-aktivov-gruppi-anatoliya-motileva', target='_blank', rel='nofollow noreferrer noopener')
+                                    span.media-item__container
+                                    span.media-item__img-wrapper
+                                        img.media-item__label(src='./assets/img/about-us/vedomosti.png', alt='./assets/img/about-us/vedomosti.png', width = "197px")
+                                        span.media-item__wrapper
+                                            span.media-item__date 29.07.2015
+                                            span.media-item__description.text Началась распродажа активов группы Анатолия Мотылева
+                                    span.media-item__preview-wrapper
+                                        img.media-item__preview(src='./assets/img/about-us/vedomosti-text.png', alt='./assets/img/about-us/vedomosti-text.png')
+                            li.media-list__item
+                                a.media-item(href='https://www.forbes.ru/news/34940-zaregistrirovany-izmeneniya-v-pravila-fondov-zao-uk-interfin-kapital-v-svyazi-so-smenoi-a', target='_blank', rel='nofollow noreferrer noopener')
+                                    span.media-item__container
+                                    span.media-item__img-wrapper
+                                        img.media-item__label(src='./assets/img/about-us/forbes.png', alt='./assets/img/about-us/forbes.png' width = "114px" height= "30px")
+                                        span.media-item__wrapper
+                                            span.media-item__date 21.12.2009
+                                            span.media-item__description.text Зарегистрированны изменения в правила фондов ЗАО "УК Интерфин Капитал", в связи со сменой аудитора
+                                    span.media-item__preview-wrapper
+                                        img.media-item__preview(src='./assets/img/about-us/forbes-text.png', alt='./assets/img/about-us/forbes-text.png')

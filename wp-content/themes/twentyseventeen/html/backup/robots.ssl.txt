@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /mode
+Disallow: /media
+Disallow: /static
+Disallow: /search
+Disallow: /admin
+Disallow: /request
+Disallow: /profile
+Disallow: /pay
+Sitemap: https://unitrust.capital/sitemap.xml
+Host: https://unitrust.capital/

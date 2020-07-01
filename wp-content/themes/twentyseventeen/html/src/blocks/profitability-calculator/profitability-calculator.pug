@@ -1,0 +1,153 @@
+//-
+    name: profitability-calculator
+    description: Markup for the profitability calculator block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin profitability-calculator(props = {})
+    .profitability-calculator
+        #calc.calculator(data-calculator='', data-mode='organization')
+            .calculator__wrap
+                .row
+                    .column
+                        h2.bill-top__title.top__title Рассчитайте Ваш доход от инвестиций в торги по банкротству
+                        .calculator__container
+                            .calculator__main
+                                .calculator__left
+                                    .calculator__calculation
+                                        form.calculator__form(action='', method='get', data-calculator-form='')
+                                            .calculator__form-fields
+                                                .calculator__form-field.calculator__form-field_sum
+                                                    .calculator__label.calculator__label_slider
+                                                        label.label(for='i_5ed36e8a3e344_CalculatorForm_sum') Я хочу вложить
+                                                    .calculator__input
+                                                        .calculator__input-value.calculator__input_sum(data-calculator-input='sum', data-postfix='" ₽"', data-slider-postfix='" ₽"', data-from='100000', data-to='10000000', data-step='1000')
+                                                            .calculator__input-wrapper.calculator__input-wrapper_slider
+                                                                .calculator__input-direct
+                                                                    input#i_5ed36e8a3e344_CalculatorForm_sum(type='text', value='100000', name='CalculatorForm[sum]')
+                                                                .calculator__input-postfix-value(data-postfix='')
+                                                                    | ₽
+                                                            .calculator__input-slider-wrapper
+                                                                .calculator__input-slider(data-slider='')
+                                                                .calculator__input-slider-borders
+                                                                    .calculator__input-slider-border.calculator__input-slider-border_from
+                                                                        | 250 000 ₽
+                                                                    .calculator__input-slider-border.calculator__input-slider-border_to
+                                                                        | 10 000 000 ₽
+                                                .calculator__safety
+                                                    | Вся сумма инвестиций застрахована
+                                                .calculator__form-field
+                                                    .calculator__label.calculator__label_slider
+                                                        label.label(for='i_5ed36e8a3e344_CalculatorForm_term') Срок окупаемости
+                                                    .calculator__input
+                                                        .calculator__input-value.calculator__input_term(data-calculator-input='term', data-postfix='["\u00a0\u043c\u0435\u0441\u044f\u0446","\u00a0\u043c\u0435\u0441\u044f\u0446\u0430","\u00a0\u043c\u0435\u0441\u044f\u0446\u0435\u0432"]', data-slider-postfix='["\u00a0\u043c\u0435\u0441\u044f\u0446","\u00a0\u043c\u0435\u0441\u044f\u0446\u0430","\u00a0\u043c\u0435\u0441\u044f\u0446\u0435\u0432"]', data-from='6', data-to='36', data-step='1')
+                                                            .calculator__input-wrapper.calculator__input-wrapper_slider
+                                                                .calculator__input-direct
+                                                                    input#i_5ed36e8a3e344_CalculatorForm_term(type='text', value='12', name='CalculatorForm[term]')
+                                                                .calculator__input-postfix-value(data-postfix='')
+                                                                    | месяцев
+                                                            .calculator__input-slider-wrapper
+                                                                .calculator__input-slider(data-slider='')
+                                                                .calculator__input-slider-borders
+                                                                    .calculator__input-slider-border.calculator__input-slider-border_from
+                                                                        | 6 мес.
+                                                                    .calculator__input-slider-border.calculator__input-slider-border_to
+                                                                        | 36 мес.
+                                                .calculator__form-field.calculator__select-field
+                                                    .calculator__label
+                                                        label.label(for='i_5ed36e8a3e344_CalculatorForm_percent') Подходящая стратегия:
+                                                    .calculator__select
+                                                        select#i_5ed36e8a3e344_CalculatorForm_percent(name='CalculatorForm[percent]', data-calculator-percent='')
+                                                            option(value='1')
+                                                                | Ежемесячно
+                                                            option(value='3')
+                                                                | Ежеквартально
+                                                            option(value='12')
+                                                                | Ежегодно
+                                                            option(value='0', selected='selected')
+                                                                | Агрессивная стратегия
+                                        ul.calculator__files.calculator__files_desktop
+                                            li.calculator__file
+                                                a.calculator__file-link(href='https://unitrust.capital/media/Main/MainSettings/2020-02-17/Uslovia%20VP.pdf', title='Условия вексельной программы', data-goal-click='click_button_conditions', target='_blank')
+                                                    span.calculator__file-icon.doc-icon
+                                                        span.doc-icon__extension
+                                                            | pdf
+                                                    span.calculator__file-wrap
+                                                        span.calculator__file-name
+                                                            | Инвестиционное предложение
+                                            li.calculator__file
+                                                a.calculator__file-link(href='https://unitrust.capital/request/graphic_modal', title='График выплаты процентов', data-modal='', data-goal='chart_succes', data-goal-click='click_button_chart')
+                                                    span.calculator__file-icon.doc-icon
+                                                        span.doc-icon__extension
+                                                            | pdf
+                                                    span.calculator__file-wrap
+                                                        span.calculator__file-name
+                                                            | График окупаемости
+                                .calculator__right
+                                    .calculator__info-wrap
+                                        ul.calculator__results
+                                            li.calculator__result
+                                                .calculator__result-name
+                                                    | Проценты к выплате
+                                                .calculator__result-value
+                                                    span(data-result='income') 240 000
+                                                    span.calculator__result-unit ₽
+                                            li.calculator__result
+                                                .calculator__result-name
+                                                    | Процентная ставка
+                                                .calculator__result-value
+                                                    span(data-program='percent') 24
+                                                    span.calculator__result-unit % годовых
+                                            li.calculator__result(data-monthly='')
+                                                .calculator__result-name(data-program='incomeName')
+                                                    | Ежемесячный доход
+                                                .calculator__result-value
+                                                    span(data-result='monthly') 20 000
+                                                    span.calculator__result-unit ₽
+                                        .calculator__income
+                                            .calculator__income-value
+                                                .calculator__income-wrapper
+                                                    span(data-result='sum') 1 240 000
+                                                    span.calculator__income-unit ₽
+                                                    .calculator__income-name
+                                                        | Доход за весь срок
+                                    .calculator__recall-form
+                                        form.recall-calc.request-form(action='/request/calc', data-ajax-form='CalcReplyForm', data-goal='calc_success', method='post')
+                                            .recall-calc__data.request-form__data
+                                                .recall-calc__fields
+                                                    .recall-calc__field
+                                                        input#i_5ed36e8a409c9_CalcReplyForm_phone.required(type='text', value='', name='CalcReplyForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    .recall-calc__errors
+                                                        ul#i_5ed36e8a409c9_CalcReplyForm_phone_errors.required.errors(style='display: none;')
+                                                    button.recall-calc__button.button.button_blue(type='submit')
+                                                        | Оставить заявку
+                                                .recall-calc__policy
+                                                    | Отправляя форму, вы соглашаетесь с 
+                                                    a.recall-calc__policy-link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', title='Политика конфиденциальности', target='_blank') политикой конфиденциальности
+                                            .recall-calc__success.request-form__success
+                                                .recall-calc__icon
+                                                    svg.svg-icon.icon-success
+                                                        use(xlink:href='/static/svg/sprite.svg#success')
+                                                .recall-calc__wrapper
+                                                    .recall-calc__title
+                                                        | Вы успешно оставили заявку!
+                                                    .recall-calc__subtitle
+                                                        | Наши специалисты свяжутся с Вами в рабочее время
+                                                        | в течение 15 минут
+                                ul.calculator__files.calculator__files_mobile
+                                    li.calculator__file
+                                        a.calculator__file-link(href='https://unitrust.capital/media/Main/MainSettings/2020-02-17/Uslovia%20VP.pdf', title='Условия вексельной программы', target='_blank', data-goal-click='click_button_conditions')
+                                            span.calculator__file-icon.doc-icon
+                                                span.doc-icon__extension
+                                                    | pdf
+                                            span.calculator__file-wrap
+                                                span.calculator__file-name
+                                                    | Инвестиционное предложение
+                                    li.calculator__file
+                                        a.calculator__file-link(href='https://unitrust.capital/request/graphic_modal', title='График выплаты процентов', data-modal='', data-goal='chart_succes', data-goal-click='click_button_chart')
+                                            span.calculator__file-icon.doc-icon
+                                                span.doc-icon__extension
+                                                    | pdf
+                                            span.calculator__file-wrap
+                                                span.calculator__file-name
+                                                    | График окупаемости

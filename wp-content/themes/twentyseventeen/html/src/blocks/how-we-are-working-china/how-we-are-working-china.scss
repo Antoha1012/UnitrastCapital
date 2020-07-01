@@ -1,0 +1,47 @@
+/**
+ * Styles for the how we are working china block.
+ */
+.how-we-are-working-china {
+    .about-china__subtittle {
+        max-width: 553px;
+        width: 100%;
+
+    }
+
+    .about-china__blog {
+        margin-top: 145px;
+    }
+
+    &__btn {
+        display: flex;
+        margin-bottom: 17px;
+        color: #3EA6E7;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+
+    .icon-contacts {
+        margin-left: 24px;
+    }
+
+    .about-china__knopka {
+        background: #3EA6E7;
+        border-radius: 100px;
+        margin-top: 14px;
+        padding: 21px 23px 21px 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:hover {
+            background-color: #5CBCF8;
+        }
+    }
+}

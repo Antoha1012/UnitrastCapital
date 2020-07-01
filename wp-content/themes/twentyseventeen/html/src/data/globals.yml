@@ -1,0 +1,35 @@
+#
+# Global data
+#
+
+version: "0.1.0"
+
+siteTitle: "Site Title"
+siteTagline: "Site Tagline"
+
+disclosureGlobal:
+  items:
+    - text: Уставные документы
+      link: information-disclosure.html
+    - text: Договор на оказание <br> услуг
+      link: dogovor.html
+    - text: Электронные торговые площадки
+      link: elektronnye-torgovye-ploshchadki.html
+    - text: Реквизиты
+      link: rekvizity.html
+contentHeaderTemplate:
+  title: Главная
+  breadcrumbs: —
+  subtitle: Инвесторам
+  headear: Раскрытие информации
+  item:
+    - texts: О нас
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Отзывы
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Партнеры
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Карьера в компании
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Раскрытие информации
+      links: http://lexus24v.beget.tech/about.html

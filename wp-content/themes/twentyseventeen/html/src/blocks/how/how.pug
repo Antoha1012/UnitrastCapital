@@ -1,0 +1,66 @@
+//-
+    name: how
+    description: Markup for the how block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin how(props = {})
+    .how
+        .row
+            .column
+                +press-index(props.pressIndex)                    
+                .how__main
+                    ul.how__items
+                        li.how__item
+                            .how__wrapper
+                                .how__number 01
+                                .how__arrow
+                            .how__name Поиск и аналитика
+                            .how__text.how__text--padding Вы определяете свои инвестиционные цели и IT-портфель. Наши эксперты анализируют и предлагают вам подходящие варианты
+                        li.how__item
+                            .how__wrapper
+                                .how__number 02
+                                .how__arrow
+                            .how__name Безопасная сделка
+                            .how__text.how__text--padding Мы обеспечиваем безопасное сопровождение сделки по покупке и юридическое переоформление онлайн бизнеса на вас
+                        li.how__item
+                            .how__wrapper
+                                .how__number 03
+                                .how__arrow
+                            .how__name Делегирование
+                            .how__text.how__text--padding Вы делегируйте управление IT-бизнеса нашим экспертам. Мы контроллируем, развиваем и обеспечиваем технической поддержкой ваш бизнес
+                        li.how__item
+                            .how__wrapper
+                                .how__number 04
+                                .how__arrow
+                            .how__name Получение прибыли
+                            .how__text.how__text--padding Мы обеспечиваем качественную монетизацию бизнеса. Вы получаете пассивный доход в рублях или валюте от продажи рекламных мест и трафика
+                .interfin
+                    .interfin__first
+                        .intrfin__title 
+                            span УК «Интерфин Капитал»
+                            | - управление и консалтинг нового поколения
+                        .intrfin__subtitle За это время мы выкупили и релизовали имущество организаций-банкротов на сумму более 1 млрд. рублей. Накопленный опыт позволил нам организовать работу собственной компании в 2018 году и продолжить развиваться под собственный брендом Unitrust Capital. Наша компания активно развивается и на сегодняшний осуществляющим свою деятельность практически во всех регионах РФ.
+                        a.interfin__btn(href="") больше о нас 
+                             i.fas.fa-chevron-right.calc-hows
+                    .interfin__second
+                        .strategies-adviser__person-info
+                            .strategies-adviser__person-name Александр Васильев
+                            .strategies-adviser__person-desc 
+                                | Главный инвестиционный
+                                br 
+                                | стратег «Интерфин Капитал»
+                        img.strategies-adviser__person-photo(src='./assets/img/alex.png', alt='')
+                .interfin-info
+                    .interfin-body.expert
+                        img.experts(src="./assets/img/un-3-1_09.jpg",width="200" alt="")
+                        p.interfin-info-text.tx.interfin-info-text--first Высокий рейтинг надежности и качества услуг управляющей компании от рейтингового агенства
+                            a(href="#")  «Эксперт РА» 2015
+                    .interfin-body.national
+                        img(src="./assets/img/un-3-1_03.jpg",width="200" alt="")
+                        p.interfin-info-text.reiting.interfin-info-text--second Высокий рейтинг надежности от 
+                            a(href="#") «Национального рейтингового агенства» 2014
+                    .interfin-body.naufor
+                        img(src="./assets/img/un-3-1_06.jpg",width="200" alt="")
+                        p.interfin-info-text.capital.interfin-info-text--third УК «Интерфин Капитал» член национальной ассоциации 
+                            a(href="#") «Науфор» с 2004

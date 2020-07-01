@@ -1,0 +1,541 @@
+//-
+    name: workers-about
+    description: Markup for the workers about block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin about-workers(props = {})
+    .about-workers
+        .workers
+            .row
+                .column
+                    .workers__team
+                        ul.workers__list.workers-list
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2020-04-06/2020-03-06_10-29-10.png')")
+                                    span.workers-item__name Ковалевич Евгений Валерьевич
+                                    span.workers-item__profession.text.text_small Генеральный директор
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Ковалевич Евгений Валерьевич
+                                            span.workers-item__profession.text.text_small Генеральный директор
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Мозговой
+                                                | центр, идейный вдохновитель, сердце и душа компании. Человек,
+                                                | благодаря которому бизнес-модель Юнитраст Кэпитал функционирует
+                                                | не хуже, чем швейцарские часы. Автор уникальной методики по
+                                                | отбору наиболее рентабельных объектов на торгах по банкротству.
+                                                | Образование: высшее экономическое - Опыт в сфере торгов: с 2005
+                                                | года - Хобби: футбол, рыбалка
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email ceo@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-18/2019-12-18_10-05-54.png')")
+                                    span.workers-item__name Людмила Белобородова
+                                    span.workers-item__profession.text.text_small Директор бухгалтерского департамента
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Людмила Белобородова
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | бухгалтерского департамента
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Те,
+                                                | кто сотрудничают с компанией Юнитраст Кэпитал уже не первый год
+                                                | - знают, что выплаты процентного дохода и возврат
+                                                | инвестированных средств всегда производятся нами точно в сроки,
+                                                | установленные договором. Пристально следит за этим директор
+                                                | бухгалтерского департамента - Людмила Белобородова - бухгалтер с
+                                                | профессиональным стажем более 20 лет.
+                                            a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-12-19/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%B0.jpg', data-fancybox='')
+                                                span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-12-19/e90fd22a2ef937854acf4f6965c7f19e.jpg')")
+                                                span.workers-item__modal-sertificate-name
+                                                    | Сертификат
+                                                    | соответствия аудитора
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email accountant@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/_1.jpg')")
+                                    span.workers-item__name Константин Ихтейман
+                                    span.workers-item__profession.text.text_small
+                                        | Директор департамента
+                                        | инвестиционного консалтинга
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Константин Ихтейман
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | департамента инвестиционного консалтинга
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Для
+                                                | увеличения оборотных средств компания Юнитраст Кэпитал
+                                                | привлекает денежные средства от инвесторов. Ответственная задача
+                                                | по контролю за привлечением заемного капитала возложена на
+                                                | сильные плечи Ихтейман Константина – специалиста с опытом работы
+                                                | в финансовых и банковских учреждениях более 10 лет.
+                                            a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-12-19/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%98%D1%85%D1%82%D0%B5%D0%B8%CC%86%D0%BC%D0%B0%D0%BD.jpg', data-fancybox='')
+                                                span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-12-19/8add20834b1ba50eff6837526d47dd01.jpg')")
+                                                span.workers-item__modal-sertificate-name
+                                                    | Сертификат
+                                                    | соответствия аудитора
+                                            a.workers-item__modal-video-wrapper(href='https://www.youtube.com/watch?v=HqgSOmQKH1o', data-fancybox='')
+                                                span.workers-item__modal-video-img(style="background-image: url('https://img.youtube.com/vi/HqgSOmQKH1o/0.jpg')")
+                                                span.workers-item__modal-video-name
+                                                    | Выступление на новогоднем фуршете
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email ikhteyman@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/.png')")
+                                    span.workers-item__name Алексей Кукаркин
+                                    span.workers-item__profession.text.text_small
+                                        | Директор департамента
+                                        | аукционного брокериджа
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Алексей Кукаркин
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | департамента аукционного брокериджа
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Деятельность
+                                                | Юнитраст Кэпитал на торгах по банкротству построена на
+                                                | взаимодействии компании с более чем 100 аукционными брокерами по
+                                                | всей России. Координацией их работы занимается Алексей Кукаркин
+                                                | - специалист с опытом участия в торгах более 10 лет. В арсенале
+                                                | Алексея сделки с имуществом банкротов на сотни миллионов
+                                                | рублей.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email tender@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/static/images/about/noname.png')")
+                                    span.workers-item__name Виктория Горюнова 
+                                    span.workers-item__profession.text.text_small
+                                        | Директор департамента
+                                        | HR
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Виктория Горюнова 
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | департамента HR
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Залогом успешного бизнеса является команда
+                                                | высококвалифицированных специалистов, собрать которую в рамках
+                                                | одной компании – ответственная и сложная задача. С успехом
+                                                | справляется с ней наша прекрасная и горячо любимая
+                                                | руководительница департамента HR – Виктория Горюнова.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email gorunova@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/noname_1.png')")
+                                    span.workers-item__name Виктор Власов
+                                    span.workers-item__profession.text.text_small
+                                        | Директор департамента
+                                        | оценки активов
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Виктор Власов
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | департамента оценки активов
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Прежде
+                                                | чем выкупать на торгах то или иное имущество, очень важно его
+                                                | правильно оценить, чтобы спрогнозировать потенциальный доход от
+                                                | сделки. В компании Юнитраст Кэпитал этим занимается целый
+                                                | Департамент оценки имущества, во главе которого стоит Виктор
+                                                | Власов – специалист с колоссальным опытом и высокими
+                                                | профессиональными компетенциями.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email vlasov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-10-03/2019-10-03_14-35-29.png')")
+                                    span.workers-item__name Валерий Ключников
+                                    span.workers-item__profession.text.text_small
+                                        | Директор
+                                        | IT-департамента
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Валерий Ключников
+                                            span.workers-item__profession.text.text_small
+                                                | Директор
+                                                | IT-департамента
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Валерий
+                                                | Ключников - молодой, но очень перспективный специалист,
+                                                | отвечающий за правильное функционирование всех компьютерных
+                                                | систем в компании. В его обязанности также входит обеспечение
+                                                | безопасности персональных данных клиентов, инвесторов и
+                                                | партнеров Юнитраст Кэпитал.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email it@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-10-28/noname.png')")
+                                    span.workers-item__name Юлия Казакова
+                                    span.workers-item__profession.text.text_small Бухгалтер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Юлия Казакова
+                                            span.workers-item__profession.text.text_small Бухгалтер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Те,
+                                                | кто сотрудничают с компанией Юнитраст Кэпитал уже не первый год
+                                                | - знают, что выплаты процентного дохода и возврат
+                                                | инвестированных средств всегда производятся нами точно в сроки,
+                                                | установленные договором. Пристально следит за этим сотрудница
+                                                | бухгалтерского департамента - Юлия Казакова.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email kazakova@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-18/2019-12-18_10-09-06.png')")
+                                    span.workers-item__name Андрей Горбунов
+                                    span.workers-item__profession.text.text_small
+                                        | Финансовый
+                                        | советник
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Андрей Горбунов
+                                            span.workers-item__profession.text.text_small
+                                                | Финансовый
+                                                | советник
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Хотите выгодно вложить деньги, но не знаете как? Банковские
+                                                | проценты уже не радуют? Хотите больше знать о гарантиях?
+                                                | Финансовый советник «Юнитраст Кэпитал» Андрей Горбунов поможет
+                                                | Вам подобрать наиболее оптимальное решение для сохранения и
+                                                | преумножения собственного капитала! Обращайтесь!
+                                            a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-12-19/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%93%D0%BE%D1%80%D0%B1%D1%83%D0%BD%D0%BE%D0%B2.jpg', data-fancybox='')
+                                                span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-12-19/5e273ee3708f9a9ea189ccfa4a0efec6.jpg')")
+                                                span.workers-item__modal-sertificate-name
+                                                    | Сертификат
+                                                    | соответствия аудитора
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email gorbunov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/.jpg')")
+                                    span.workers-item__name Роман Елистратов
+                                    span.workers-item__profession.text.text_small
+                                        | Финансовый
+                                        | советник
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Роман Елистратов
+                                            span.workers-item__profession.text.text_small
+                                                | Финансовый
+                                                | советник
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Хотите выгодно вложить деньги, но не знаете как? Банковские
+                                                | проценты уже не радуют? Хотите больше знать о гарантиях?
+                                                | Финансовый советник «Юнитраст Кэпитал» Роман Елистратов поможет
+                                                | Вам подобрать наиболее оптимальное решение для сохранения и
+                                                | преумножения собственного капитала! Обращайтесь!
+                                            a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-11-27/Scan_20191111_115735%20(1).jpg', data-fancybox='')
+                                                span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-11-27/18c991759a95bd1f95f457557123c8d1.jpg')")
+                                                span.workers-item__modal-sertificate-name
+                                                    | Сертификат
+                                                    | Рустехпром
+                                            a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-12-19/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%95%D0%BB%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D0%B2.jpg', data-fancybox='')
+                                                span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-12-19/e7b9577a206979501a968464710264a2.jpg')")
+                                                span.workers-item__modal-sertificate-name
+                                                    | Сертификат
+                                                    | соответствия аудитора
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email elistratov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/_2.png')")
+                                    span.workers-item__name Мария Маслюкова
+                                    span.workers-item__profession.text.text_small
+                                        | Финансовый
+                                        | советник
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Мария Маслюкова
+                                            span.workers-item__profession.text.text_small
+                                                | Финансовый
+                                                | советник
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Хотите выгодно вложить деньги, но не знаете как? Банковские
+                                                | проценты уже не радуют? Хотите больше знать о гарантиях?
+                                                | Финансовый советник «Юнитраст Кэпитал» Мария Маслюкова поможет
+                                                | Вам подобрать наиболее оптимальное решение для сохранения и
+                                                | преумножения собственного капитала! Обращайтесь!
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email maria.m@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-18/2019-12-18_10-08-28.png')")
+                                    span.workers-item__name Виктория Винокурова
+                                    span.workers-item__profession.text.text_small
+                                        | Финансовый
+                                        | советник
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Виктория Винокурова
+                                            span.workers-item__profession.text.text_small
+                                                | Финансовый
+                                                | советник
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Хотите выгодно вложить деньги, но не знаете как? Банковские
+                                                | проценты уже не радуют? Хотите больше знать о гарантиях?
+                                                | Финансовый советник «Юнитраст Кэпитал» Виктория Винокурова
+                                                | поможет Вам подобрать наиболее оптимальное решение для
+                                                | сохранения и преумножения собственного капитала!
+                                                | Обращайтесь!
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email vinokurova@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-18/2019-12-18_10-08-42.png')")
+                                    span.workers-item__name Игорь Захаров
+                                    span.workers-item__profession.text.text_small
+                                        | Финансовый
+                                        | советник
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Игорь Захаров
+                                            span.workers-item__profession.text.text_small
+                                                | Финансовый
+                                                | советник
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Хотите выгодно вложить деньги, но не знаете как? Банковские
+                                                | проценты уже не радуют? Хотите больше знать о гарантиях?
+                                                | Финансовый советник «Юнитраст Кэпитал» Игорь Захаров поможет Вам
+                                                | подобрать наиболее оптимальное решение для сохранения и
+                                                | преумножения собственного капитала! Обращайтесь!
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email zakharov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/_4.png')")
+                                    span.workers-item__name Алена Корешкова
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Алена Корешкова
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Алена Корешкова.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email alena.k@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/_5.png')")
+                                    span.workers-item__name Александр Логинов
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Александр Логинов
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Александр Логинов.
+                                            a.workers-item__modal-video-wrapper(href='https://www.youtube.com/watch?time_continue=8&v=yROd-4dBNk8&feature=emb_title', data-fancybox='')
+                                                span.workers-item__modal-video-img(style="background-image: url('https://unitrust.capital/media/About/Video/2019-12-24/2019-12-24_16-54-55.png')")
+                                                span.workers-item__modal-video-name
+                                                    | Как устроены торги по банкротству?
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email loginov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-09-19/_6.png')")
+                                    span.workers-item__name Юлия Дубцова
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Юлия Дубцова
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Юлия Дубцова.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email julIa.d@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-11-29/.jpg')")
+                                    span.workers-item__name Екатерина Лебедева
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Екатерина Лебедева
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Екатерина Лебедева.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email lebedeva@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-11-29/%20%D0%95.%D0%90..jpg')")
+                                    span.workers-item__name Егор Соловьев
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Егор Соловьев
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Егор Соловьев.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email solovyev@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-02/2019-12-02_22-11-52.png')")
+                                    span.workers-item__name Юрий Леонтьев
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Юрий Леонтьев
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Юрий Леонтьев.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email leontyev@unitrust.capital
+                                                    ul.socials__items.socials__items_dark
+                            li.workers-list__item
+                                .workers-item
+                                    .workers-item__avatar(style="background-image: url('https://unitrust.capital/media/About/Worker/2019-12-03/.jpg')")
+                                    span.workers-item__name Михаил Уколов
+                                    span.workers-item__profession.text.text_small
+                                        | Аукционный
+                                        | брокер
+                                    .workers-item__modal
+                                        .workers-item__head
+                                            span.workers-item__name Михаил Уколов
+                                            span.workers-item__profession.text.text_small
+                                                | Аукционный
+                                                | брокер
+                                        .workers-item__body
+                                            span.workers-item__modal-description.text.text_small
+                                                | Осуществление
+                                                | сделок с имуществом организаций-банкротов требует понимания
+                                                | механизмов функционирования электронных площадок, глубокого
+                                                | знания законодательства, регламентирующего проведение торгов,
+                                                | наличие опыта по взаимодействию с конкурсными управляющими,
+                                                | отбору и выкупу лотов. Всеми этими качествами может похвастаться
+                                                | наш аукционный брокер - Михаил Уколов.
+                                            .workers-item__social
+                                                .workers-item__modal-social
+                                                    span.workers-item__modal-email ukolov@unitrust.capital
+                                                    ul.socials__items.socials__items_dark

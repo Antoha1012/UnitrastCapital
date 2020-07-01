@@ -1,0 +1,626 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-device-pixel-ratio: 1.25),
+only screen and (-webkit-min-device-pixel-ratio: 2.0833333333333335),
+only screen and (min-resolution: 200dpi),
+only screen and (min-resolution: 1.25dppx) {}
+
+.calc-yield {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.icn {
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icn_arrow-up:before {
+  content: "\e910";
+}
+
+.icn_arrow-up.m-profit {
+  color: #298310;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table__caption {
+  display: table-caption;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  font-weight: 300;
+  margin: 1.2em 0 0.3em;
+}
+
+.table__tr.table__tr_head {
+  display: table-row;
+  width: 100%;
+}
+
+.table__td,
+.table__th {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 12px 0;
+  font-size: 1.4em;
+}
+
+.table__td-mobile-label {
+  display: none;
+}
+
+.table__td-mobile-count {
+  white-space: nowrap;
+}
+
+// .calc__yield {
+//     margin: 0 42px 35px;
+//     text-align: left
+// }
+
+.calc__yield .table__caption {
+  text-align: center;
+}
+
+.link {
+  cursor: pointer;
+  color: #e5e5e5;
+  text-decoration: underline;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.link_red {
+  text-decoration: none;
+  color: #ff1919;
+}
+
+.table_pifs-profit .table__td.m-pp-period,
+.table_pifs-profit .table__th.m-pp-period {
+  width: 84px;
+  text-align: center;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.calc__yield .table_pifs-profit .table__td.m-pp-period,
+.calc__yield .table_pifs-profit .table__th.m-pp-period {
+  width: 11%;
+  font-size: 16px;
+}
+
+.table_pifs-profit .table__td.m-pp-name,
+.table_pifs-profit .table__td.m-pp-name-day {
+  font-size: 1.6em;
+  padding-right: 20px;
+}
+
+.calc__yield .table_pifs-profit .table__td.m-pp-period {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.table_pifs-profit .table__td-text {
+  font-weight: 400;
+}
+
+.table_pifs-profit .table__td-text.up {
+  color: #77d555;
+}
+
+.table__td-link {
+  color: #828c9a;
+  font-size: 15px;
+}
+
+@media (min-width: 1230px) {
+  .calc-yield .press-index {
+    margin-bottom: -20px;
+  }
+}
+
+// @media screen and (max-width: 1279px) {
+//   // body {
+//   //   font-size: 8px;
+//   // }
+
+//   .calc__yield {
+//     margin-left: 50px;
+//     margin-right: 50px;
+//   }
+// }
+
+@media screen and (max-width: 991px) {
+  // body {
+  //   padding-top: 60px;
+  // }
+}
+
+@media screen and (max-width: 767px) {
+  .calc__yield {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .table__td-link {
+    width: 150px;
+    display: block;
+  }
+
+  .table_pifs-profit {
+    display: block;
+  }
+
+  .table_pifs-profit .table__caption {
+    display: block;
+  }
+
+  .table_pifs-profit .table__tr {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .table_pifs-profit .table__tr_head {
+    display: none;
+  }
+
+  .table_pifs-profit .table__td {
+    display: block;
+    padding: 5px 0 5px 0 !important;
+    text-align: left !important;
+    border: none !important;
+    width: auto !important;
+  }
+
+  .table_pifs-profit .table__td.m-pp-name,
+  .table_pifs-profit .table__td.m-pp-name-day {
+    width: 100% !important;
+  }
+
+  .table_pifs-profit .table__td-mobile-label {
+    display: inline-block;
+    vertical-align: top;
+    color: grey;
+    margin-right: 5px;
+  }
+
+  .table_pifs-profit .table__td-mobile-label.table__name-width {
+    width: 49%;
+  }
+
+  .table_pifs-profit .table__td-mobile-count {
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+  }
+
+  .table_pifs-profit .table__td.m-pp-name .table__td-mobile-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table_pifs-profit .table__td-mobile-label.table__name-width {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .table__td.m-pp-period {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .table__caption {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .table__caption {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .table__caption {
+    margin-bottom: 5px;
+  }
+}
+
+.m-pp-period .icn_arrow-down.m-profit,
+.m-pp-period .icn_arrow-up.m-profit {
+  margin-right: 5px;
+  top: 0;
+}
+
+@media only screen and (max-width: 520px) {
+  .table_pifs-profit .table__td-mobile-label.table__name-width {
+    font-size: 11px;
+  }
+
+  .table_pifs-profit .table__td-mobile-label {
+    font-size: 11px;
+  }
+}
+
+.icn_arrow-up.m-profit {
+  position: relative;
+}
+
+.icn_arrow-up.m-profit:before {
+  display: none;
+}
+
+.icn_arrow-up.m-profit:after {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  margin-top: -6px;
+  content: "";
+  display: block;
+  background-image: url(../img/bpifs-arrows.png);
+  background-repeat: no-repeat;
+  width: 5px;
+  background-position: -8px 0;
+  height: 10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+
+  .icn_arrow-down.m-profit:after,
+  .icn_arrow-up.m-profit:after,
+  .slide-side_container.fullscreen .icn_arrow-down.m-profit,
+  .slide-side_container.fullscreen .icn_arrow-up.m-profit {
+    background-size: 14px 10px;
+    background-image: url(../img/bpifs-arrowsx2.png);
+  }
+}
+
+.table__th.m-pp-name,
+.table_pifs-profit .table__td.m-pp-name {
+  padding-left: 12px;
+  font-size: 15px;
+  color: #828c9a;
+}
+
+// .calc__yield.with__graph {
+//     margin-left: 44px;
+//     margin-right: 44px
+// }
+
+// .calc__yield.with__graph .table__th.m-pp-name,
+// .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name {
+//   padding-left: 12px;
+// }
+
+.calc__yield.with__graph .table__td,
+.calc__yield.with__graph .table__th {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.calc__yield.with__graph .table__th {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d3e2ec;
+}
+
+.calc__yield.with__graph .table__td:first-child,
+.calc__yield.with__graph .table__th:first-child {
+  text-align: left;
+  width: 325px;
+}
+
+.m-pp-graph {
+  width: 83px !important;
+}
+
+.calc__yield.with__graph .table.table_pifs-profit.body {
+  padding-top: 24px;
+}
+
+.calc__yield .table_pifs-profit .table__td.m-pp-period,
+.calc__yield .table_pifs-profit .table__th.m-pp-period {
+  text-align: right;
+}
+
+.calc__yield .table_pifs-profit .table__td.m-pp-period {
+  padding-right: 0;
+}
+
+
+.table__tr {
+  display: grid !important;
+  grid-template-columns: 350px 83px repeat(6, 1fr);
+}
+
+.table__td,
+.table__th {
+  width: auto !important;
+}
+
+.table__td:first-child,
+.table__th:first-child {
+  width: auto !important;
+}
+
+.table__td:not(:first-child),
+.table__th:not(:first-child) {
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.calc__disclaimer {
+  font-size: 12px;
+  color: #d1dde5;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 32px;
+  border: 1px solid #d1dde5;
+  border-radius: 30px;
+  max-width: 1100px;
+  padding: 10px 0px;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.m-pp-graph-img {
+  display: inline-block;
+  width: 83px;
+  height: 26px;
+}
+
+.m-pp-graph {
+  width: 5%;
+}
+
+@media screen and (max-width: 1279px) {
+  .calc__yield.with__graph .table_pifs-profit .table__td {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+
+  .m-pp-graph {
+    width: 10%;
+  }
+
+  .calc__yield.with__graph .table__td {
+    padding: 7px 0;
+  }
+
+  .calc__yield {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .m-pp-graph {
+    width: 12%;
+  }
+
+  .calc__yield.with__graph {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td {
+    font-size: 13px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr .table__td:last-child {
+    padding-right: 0;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-period {
+    width: 11%;
+  }
+}
+
+.table__td-li {
+  list-style: disc;
+  color: #3EA6E7;
+  list-style-position: inside;
+}
+
+
+// .calc-yield .press-index__head {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   margin-bottom: 46px;
+// }
+
+.calc__yield .table_pifs-profit .table__td.m-pp-period,
+.calc__yield .table_pifs-profit .table__th.m-pp-period {
+  width: 11%;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .m-pp-graph-img {
+    height: 31px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr {
+    position: relative;
+  }
+
+  .calc__yield.with__graph {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-graph {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .calc-yield .table__tr {
+    display: block !important;
+  }
+
+  .press-index__title.title.title_medium {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .calc-yield .press-index__head {
+    margin-bottom: 0;
+  }
+
+  .calc-yield .press-index {
+    margin-bottom: 0px;
+  }
+
+  .calc-yield {
+    padding-top: 0px;
+  }
+
+  .table__tr.table__tr_head.mobil-head {
+    display: none !important;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name .table__td-mobile-name {
+    padding-bottom: 23px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name a.table__td-mobile-name {
+    padding-top: 0;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td-text {
+    font-size: 14px;
+    // margin-left: 58px;
+  }
+  .table__td{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-period {
+    max-width: 100%;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr {
+    border: none;
+    max-width: 386px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td-mobile-label.table__name-width {
+    width: 54%;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr:not(:first-child) {
+    border-top: 1px solid #D3E2EC;
+    padding-top: 20px;
+  }
+
+  .table_pifs-profit .table__td-mobile-label.table__name-width {
+    font-size: 12px;
+  }
+
+  .table_pifs-profit .table__td {
+    padding: 6px 0 7px 0 !important;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name .table__td-mobile-name {
+    padding-bottom: 3px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr {
+    padding-bottom: 18px;
+  }
+
+  .calc__yield {
+    margin-bottom: 0;
+  }
+
+  .calc-yield .press-index__head {
+    flex-direction: column;
+  }
+}
+
+.vector {
+  display: inline;
+}
+
+@media screen and (max-width: 520px) {
+  .calc__yield.with__graph .table_pifs-profit .table__td.m-pp-name {
+    max-width: 125px;
+    margin-bottom: 20px;
+  }
+
+  .calc__yield.with__graph .table_pifs-profit .table__tr {
+    max-width: 100% !important;
+  }
+}
+
+.m-pp-graph-link img {
+  opacity: 1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+@media (max-width: 768px) {
+  .calc__disclaimer {
+    border: none;
+    border-bottom: 1px solid #d1dde5;
+    border-top: 1px solid #d1dde5;
+    border-radius: 0;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .table__td-li {
+    list-style: none;
+  }
+}
+
+@media (min-width: 1230px) {
+
+  .calc-yield .title_medium{
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,113 @@
+//-
+	name: disclosure
+	description: Markup for the disclosure block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin disclosure(props = {}, activeIndex)
+	.disclosure
+		.top
+			.row
+				.column.large-12
+					.top__content
+						h2.top__title Документы
+						.top__container
+							.top__info
+								.top__text.text Мы придерживаемся принципов прозрачности и открытости нашего бизнеса, поэтому Вы всегда можете ознакомиться с оригиналами всех правоустанавливающих документов в офисе компании
+							.top__action
+								a.top__button.button.button_transparent(href='https://unitrust.capital/request/consult') Бесплатная консультация
+		.layout__content
+			.row
+				.column.large-12
+					.disclosure-page
+						form.disclosure-page__form(action='', data-document-selector='')
+							.disclosure-page__form-label
+								label.label(for='CategorySelectorForm_categories') Выберите подраздел
+							.disclosure-page__form-input
+								select#CategorySelectorForm_categories
+									option(value='information-disclosure.html', selected) Уставные документы
+									option(value='dogovor.html') Договор на оказание услуг
+									option(value='elektronnye-torgovye-ploshchadki.html') Электронные торговые площадки
+									option(value='rekvizity.html') Реквизиты
+						.disclosure-page__content
+							ul.disclosure-page__document-list
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download.disclosure-page__download_file
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension pdf
+										.disclosure-page__document-info
+											.disclosure-page__name Устав
+											.disclosure-page__description
+												| Редакция, действующая с 13.07.2018 г. 
+												br
+												|  Период актуальности с 13.07.2018 г. по н.в
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download_cursor
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension PDF
+										.disclosure-page__document-info
+											span.disclosure-page__name Лист записи
+											.disclosure-page__description
+												| Доступ к данному документу на сайте открыт исключительно для действующих
+												| клиентов. Вы можете ознакомиться с документом в офисе компании.
+												br
+												|  Редакция, действующая с 01.08.2018 г.
+												br
+												|  Период актуальности с 01.08.2018 г. по н.в.
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download.disclosure-page__download_file
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension PDF
+										.disclosure-page__document-info
+											.disclosure-page__name Свидетельство о государственной регистрации
+											.disclosure-page__description Свидетельство о государственной регистрации
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download.disclosure-page__download_file
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension pdf
+										.disclosure-page__document-info
+											.disclosure-page__name Выписка из ЕГРЮЛ
+											.disclosure-page__description
+												| Редакция, действующая с 13.07.2018 г.
+												br
+												|  Период актуальности с 13.07.2018 г. по н.в.
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download_cursor
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension PDF
+										.disclosure-page__document-info
+											span.disclosure-page__name Решение о создании
+											.disclosure-page__description
+												| Доступ к данному документу на сайте открыт исключительно для действующих
+												| клиентов. Вы можете ознакомиться с документом в офисе компании.
+												br
+												|  Редакция, действующая с 13.07. 2018 г.
+												br
+												|  Период актуальности с 13.07.2018 г. по н.в.
+											img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page-linkall(href='#modal')
+										.disclosure-page__download.disclosure-page__download_file
+											span.disclosure-page__icon.doc-icon
+												span.doc-icon__extension PDF
+										.disclosure-page__document-info
+											.disclosure-page__name Приказ о назначении генерального директора
+											.disclosure-page__description
+												| Редакция, действующая с 13.07.2018 г.
+												br
+												|  Период актуальности с 13.07.2018 г. по н.в.
+											img.disclosure-page__logo(src='', alt='')
+							.disclosure-page__navigator
+								ul.disclosure-page__navigator-list
+									li.disclosure-page__navigator-item
+										each val, index in props.items
+											a.disclosure-page__navigator-link(href=val.link, data-document-link=index-1, class=`${activeIndex == index ? '_active' : ''}`)!= val.text

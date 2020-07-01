@@ -1,0 +1,96 @@
+//-
+    name: content-header-invest
+    description: Markup for the content header invest block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin content-header-invest(props = {})
+    .content-header-invest
+        .content-header.content-header--invest
+            .content-header__bg.content-header__bg_bill-program
+            .content-header__container
+                .content-header__top
+                    .row
+                        .column.large-12
+                            .content-header__breadcrumbs
+                                .breadcrumbs
+                                    img.content-header__img(src="./assets/img/about-us/7ceec664da9c24a33f5508784612b6bf.png", alt="")
+                                    ul.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+                                        li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+                                            a.breadcrumbs__link(href='index.html', itemprop='item')
+                                                span(itemprop='name') Главная
+                                                meta(itemprop='position', content='1')
+                                        li.breadcrumbs__item.breadcrumbs__item_delimiter —
+                                        li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+                                            span(itemprop='name') Онлайн бизнес
+                            .content-header__heading
+                                .bill-hero
+                                    h1.bill-hero__title Онлайн бизнес
+                                    .bill-hero__main
+                                        ul.bill-hero__items
+                                            li.bill-hero__item
+                                                .bill-hero__key
+                                                    | 100 000
+                                                    span.bill-hero__unit ₽
+                                                .bill-hero__value Минимальная сумма инвестиций
+                                            li.bill-hero__item
+                                                .bill-hero__key
+                                                    | 40
+                                                    span.bill-hero__unit %
+                                                    span.bill-hero__unit.bill-hero__unit_small годовых
+                                                .bill-hero__value Средняя доходность готового IT-бизнеса
+                                            li.bill-hero__item
+                                                .bill-hero__key
+                                                    | 6 – 24
+                                                    span.bill-hero__unit мес.
+                                                .bill-hero__value Сроки окупаемости
+                                        a.bill-hero__button.button(href='https://unitrust.capital/request/consult', title='Оставить заявку', data-modal='', data-goal='success_form_veksel', data-goal-click='click_button_veksel') Оставить заявку
+                                        a.bill-hero__button.button(href='https://unitrust.capital/request/presentation', title='Скачать презентацию', data-modal='') Скачать презентацию
+                .content-header__bottom
+                    .content-header__menu
+                        .content-header__menu-scroll
+                            .row
+                                .column.large-12
+                                    .scrollable-menu.scrollable-menu_dark
+                                        ul.scrollable-menu__list
+                                            li.scrollable-menu__list-item.scrollable-menu__list-item_active
+                                                a.scrollable-menu__link.scrollable-menu__link_active(href='vekselnaya-programma.html', title='О инвестициях')
+                                                    span.scrollable-menu__link-text О инвестициях
+                                            li.scrollable-menu__list-item
+                                                a.scrollable-menu__link(href='vekselnaya-programma/kak-formiruetsya-dohod.html', title='Как формируется доход')
+                                                    span.scrollable-menu__link-text Как формируется доход
+                                            li.scrollable-menu__list-item
+                                                a.scrollable-menu__link(href='partners.html', title='Примеры объектов')
+                                                    span.scrollable-menu__link-text Примеры объектов
+                                            li.scrollable-menu__list-item
+                                                a.scrollable-menu__link(href='about/disclosure.html', title='Раскрытие информации')
+                                                    span.scrollable-menu__link-text Развитие IT-бизнеса
+        .bill-top.top
+            .row
+                .column.large-12
+                    .top__content
+                        .bill-top__advantages
+                            ul.bill-top__items
+                                li.bill-top__item
+                                    .bill-top__key
+                                        | 100 000
+                                        span.bill-top__unit ₽
+                                    .bill-top__value
+                                        | Минимальная сумма инвестиций
+                                li.bill-top__item
+                                    .bill-top__key
+                                        | 40
+                                        span.bill-top__unit %
+                                        span.bill-top__unit.bill-top__unit_small годовых
+                                    .bill-top__value
+                                        | Средняя доходность готового IT-бизнеса
+                                li.bill-top__item
+                                    .bill-top__key
+                                        | 6 – 24
+                                        span.bill-top__unit мес.
+                                    .bill-top__value
+                                        | Сроки окупаемости
+                            a.bill-top__button.button(href='https://unitrust.capital/request/consult', data-modal='', data-goal='success_form_veksel', data-goal-click='click_button_veksel')
+                                | Оставить заявку
+                            a.bill-top__button.button(href='https://unitrust.capital/request/presentation', title='Скачать презентацию', data-modal='')
+                                | Скачать презентацию

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill:#00BFFF
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>question_green</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M11,22A11,11,0,1,0,0,11,11.021,11.021,0,0,0,11,22Z"/>
+      <path class="cls-2" d="M9.51,12.53A2.98,2.98,0,0,1,11,9.469c2.923-2.08.838-3.872-2.749-2.045L7.4,5.714c5.46-3.062,9.909,1.484,5.325,4.747-1.638,1.218-1,1.492-1.146,2.069ZM9.259,15.2a1.367,1.367,0,0,1,2.733,0A1.367,1.367,0,0,1,9.259,15.2Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+//-
+    name: bottom-form
+    description: Markup for the bottom form block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin bottom-form(props = {})
+    .bottom-form
+        .row
+            .column.large-12
+                form.bottom-form__container.white-block.white-block_shadow.request-form(action='/request/win', data-ajax-form='WinForm', data-goal='form_success', method='post')
+                    .bottom-form__row.request-form__data
+                        .bottom-form__info
+                            .bottom-form__title.title_medium Начните зарабатывать вместе с нами
+                            .bottom-form__description.text Мы свяжемся с Вами в течение 15 минут
+                        .bottom-form__form
+                            .bottom-form__fields
+                                .form-layout__line
+                                    .form-layout__input
+                                        .floating-field(data-floating-field='')
+                                            input#i_5ed36e88011b3_WinForm_name(type='text', value='', name='WinForm[name]')
+                                            label.label(for='i_5ed36e88011b3_WinForm_name') Как вас зовут?
+                                        ul#i_5ed36e88011b3_WinForm_name_errors.errors(style='display: none;')
+                                .form-layout__line
+                                    .form-layout__input.form-layout__input_half
+                                        input#i_5ed36e88011b3_WinForm_phone.required(type='text', value='', name='WinForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                        ul#i_5ed36e88011b3_WinForm_phone_errors.required.errors(style='display: none;')
+                                    .form-layout__input.form-layout__input_half
+                                        .floating-field(data-floating-field='')
+                                            input#i_5ed36e88011b3_WinForm_email(type='text', value='', name='WinForm[email]')
+                                            label.label(for='i_5ed36e88011b3_WinForm_email') E-mail
+                                        ul#i_5ed36e88011b3_WinForm_email_errors.errors(style='display: none;')
+                            .bottom-form__actions
+                                button.button.bottom-form__button(type='submit') Отправить
+                                .agreement.bottom-form__agreement.agreement_embed Отправляя форму, вы соглашаетесь с
+                                    a.agreement__link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', title='Политика конфиденциальности', target='_blank', rel='nofollow noopener noreferrer') политикой конфиденциальности
+                    .request-form__success.bottom-form__success
+                        .bottom-form__success-block
+                            .bottom-form__success-title.title_medium
+                                | Вы успешно 
+                                br
+                                | оставили заявку!
+                            .bottom-form__success-text.text.text_small
+                                | Наши специалисты свяжутся с Вами 
+                                br
+                                |  в рабочее время в течение 15 минут
+    form.ninja(action='/media/Main/MainSettings/2019-09-19/ поручит U.pdf', method='get', target='_blank', data-ninja='surety')
+        button(type='submit')
+

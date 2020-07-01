@@ -1,0 +1,101 @@
+//-
+	name: trading-floors
+	description: Markup for the trading floors block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin trading-floors(props = {}, activeIndex)
+	.trading-floors
+		.top
+			.row
+				.column.large-12
+					.top__content
+						h2.top__title Документы
+						.top__container
+							.top__info
+								.top__text.text Мы придерживаемся принципов прозрачности и открытости нашего бизнеса, поэтому Вы всегда можете ознакомиться с оригиналами всех правоустанавливающих документов в офисе компании
+							.top__action
+								a.top__button.button.button_transparent(href='/request/consult') Бесплатная консультация
+		.layout__content
+			.row
+				.column.large-12
+					.disclosure-page
+						form.disclosure-page__form(action='', data-document-selector='')
+							.disclosure-page__form-label
+								label.label(for='CategorySelectorForm_categories') Выберите подраздел
+							.disclosure-page__form-input
+								select#CategorySelectorForm_categories
+									option(value='information-disclosure.html') Уставные документы
+									option(value='dogovor.html') Договор на оказание услуг
+									option(value='elektronnye-torgovye-ploshchadki.html', selected) Электронные торговые площадки
+									option(value='rekvizity.html') Реквизиты
+						.disclosure-page__content
+							ul.disclosure-page__document-list
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/_PropertyTrade.jpg', data-fancybox='', style="background-image: url('./assets/img/_PropertyTrade.jpg')")
+										img.disclosure-page__alt(src='./assets/img/_PropertyTrade.jpg', alt='Property Trade')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/_PropertyTrade.jpg', target='_blank')
+											| Property Trade
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/B2B CENTER.jpg', data-fancybox='', style="background-image: url('./assets/img/B2B CENTER.jpg')")
+										img.disclosure-page__alt(src='./assets/img/B2B CENTER.jpg', alt='B2B-Center')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/B2B CENTER.jpg', target='_blank')
+											| B2B-Center
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/vtp.jpg', data-fancybox='', style="background-image: url('./assets/img/vtp.jpg')")
+										img.disclosure-page__alt(src='./assets/img/vtp.jpg', alt='ВЭТП')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/vtp.jpg', target='_blank')
+											| ВЭТП
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/_1.jpg', data-fancybox='', style="background-image: url('./assets/img/_1.jpg')")
+										img.disclosure-page__alt(src='./assets/img/_1.jpg', alt='МЭТС')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/_1.jpg', target='_blank')
+											| МЭТС
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/ScanУЭТП.jpg', data-fancybox='', style="background-image: url('./assets/img/ScanУЭТП.jpg')")
+										img.disclosure-page__alt(src='./assets/img/ScanУЭТП.jpg', alt='УЭТП')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/ScanУЭТП.jpg', target='_blank')
+											| УЭТП
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/_ЭТП АО РАД.jpg', data-fancybox='', style="background-image: url('./assets/img/_ЭТП АО РАД.jpg')")
+										img.disclosure-page__alt(src='./assets/img/_ЭТП АО РАД.jpg', alt='АО "РАД"')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/_ЭТП АО РАД.jpg', target='_blank')
+											| АО "РАД"
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+								li.disclosure-page__document-item
+									a.disclosure-page__download.disclosure-page__download_image(href='./assets/img/_Russia online.jpg', data-fancybox='', style="background-image: url('./assets/img/_Russia online.jpg')")
+										img.disclosure-page__alt(src='./assets/img/_Russia online.jpg', alt='Russia Online')
+									.disclosure-page__document-info
+										a.disclosure-page__name(href='./assets/img/_Russia online.jpg', target='_blank')
+											| Russia Online
+										.disclosure-page__description
+											| Официальное подтверждение аккредитации на ЭТП.
+										img.disclosure-page__logo(src='', alt='')
+							.disclosure-page__navigator
+								ul.disclosure-page__navigator-list
+									li.disclosure-page__navigator-item
+										each val, index in props.items
+											a.disclosure-page__navigator-link(href=val.link, data-document-link=index-1, class=`${activeIndex == index ? '_active' : ''}`)!= val.text

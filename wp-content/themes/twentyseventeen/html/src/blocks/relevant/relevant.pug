@@ -1,0 +1,51 @@
+//-
+    name: relevant
+    description: Markup for the relevant block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin relevant(props = {})
+    .relevant
+        .row
+            .column.large-12
+                +press-index(props.pressIndex)
+                .main-page-detailed-section
+                    .main-page-detailed-news
+                        a.main-page-detailed-news-article.article-fisrt(href='https://www.forbes.ru/finansy/investitsii/236638-kak-otdat-dengi-v-upravlenie-srazu-200-treideram', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img(src='./assets/img/forbes-1b99d5.svg')
+                            .main-page-detailed-news-article__title
+                                | Forbes о ИФ капитал пассивно управлять онлайн бизнесом
+                            .main-page-detailed-news-article__date 4 апреля 2013
+                        a.main-page-detailed-news-article.article-fisrt(href='https://vc.ru/finance/57946-kak-vybrat-startap-dlya-investirovaniya', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img(src='./assets/img/vc-dfb728.svg')
+                            .main-page-detailed-news-article__title
+                                | Как выбрать компанию для инвестирования OTC и
+                                | pre-IPO
+                            .main-page-detailed-news-article__date 8 февраля 2019
+                        a.main-page-detailed-news-article.article-fisrt(href='https://www.rbc.ru/crypto/news/5e8c58869a79477873fe939c', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img(src='./assets/img/rbk-54c226.svg')
+                            .main-page-detailed-news-article__title
+                                | Куда вложить деньги в кризис. Варианты, риски,
+                                | страхи.
+                            .main-page-detailed-news-article__date 12 апреля 2020
+                        a.main-page-detailed-news-article(href='https://habr.com/ru/company/utex/blog/443300/', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img.svg-second(src='./assets/img/habr-a0d765.svg')
+                            .main-page-detailed-news-article__title
+                                | Как устроена разработка в United Traders. Ликбез
+                                | CTO компании
+                            .main-page-detailed-news-article__date 11 марта 2019
+                        a.main-page-detailed-news-article(href='https://vc.ru/finance/59861-pinterest-vyhodit-na-ipo-pochemu-servis-s-kartinkami-dlya-devochek-stoit-12-mlrd', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img.svg-second(src='./assets/img/vc-dfb728.svg')
+                            .main-page-detailed-news-article__title
+                                | Pinterest выходит на IPO. Компанию оценили в 12
+                                | млрд $.
+                            .main-page-detailed-news-article__date 28 февраля 2019
+                        a.main-page-detailed-news-article(href='https://habr.com/ru/company/utex/blog/446944/', target='_blank', rel='noopener')
+                            img.main-page-detailed-news-article__img.svg-second(src='./assets/img/habr-a0d765.svg')
+                            .main-page-detailed-news-article__title
+                                | Зачем инвестировать в убыточные компании?
+                                | Объясняет финансовый аналитик
+                            .main-page-detailed-news-article__date 5 апреля 2019
+                a.interfin__btn(href="") Все публикации в сми
+                    span.arrow-link__arrow
+                        i.fas.fa-chevron-right.calc-smi

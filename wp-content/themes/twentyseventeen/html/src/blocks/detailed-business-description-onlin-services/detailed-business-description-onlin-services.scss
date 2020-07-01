@@ -1,0 +1,352 @@
+/**
+ * Styles for the onlin services block.
+ */
+.detailed-business-description-onlin-services {
+    // Selector styles
+    // TODO: add code
+    background-color: #fff;
+    padding: 60px 0 80px 0;
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__invest {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.08em;
+        color: #3EA6E7;
+        padding-left: 15px;
+
+        @media screen and (max-width:575px) {
+            font-size: 10px;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 60px;
+        color: #2E2F31;
+        margin-top: 20px;
+
+        @media screen and (max-width:1200px) {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width:767px) {
+            font-size: 22px;
+            margin-bottom: 18px;
+
+        }
+
+        @media screen and (max-width:575px) {
+            font-size: 18px;
+        }
+
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 33px;
+        color: #203752;
+        margin-bottom: 32px;
+
+        @media screen and (max-width:767px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width:575px) {
+            font-size: 16px;
+        }
+    }
+
+    &__subtitle-xl {
+        @media screen and (max-width:1200px) {
+            margin-top: 30px;
+        }
+
+        // @media screen and (max-width:767px) {
+        //     font-size: 18px;
+        // }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 26px;
+        color: #8692A3;
+        padding-right: 80px;
+
+        @media screen and (max-width:1200px) {
+            margin-bottom: 30px;
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width:991px) {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+
+        @media screen and (max-width:767px) {
+            font-size: 12px;
+        }
+
+    }
+
+    &__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px #CFD8DC;
+        border-radius: 6px;
+        padding: 50px 32px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width:1200px) {
+            padding: 30px 32px;
+        }
+
+        @media screen and (max-width:991px) {
+            padding: 20px 22px;
+        }
+
+        @media screen and (max-width:670px) {
+            padding: 20px 10px;
+        }
+
+        @media screen and (max-width:575px) {
+            padding: 20px 32px;
+        }
+
+        @media screen and (max-width:400px) {
+            padding: 20px 10px;
+        }
+    }
+
+    &__tag {
+        width: 140px;
+        height: 31px;
+        background: #E5E8EE;
+        border-radius: 50px;
+        padding: 8px 16px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2E2F31;
+        margin-bottom: 24px;
+
+        @media screen and (max-width:670px) {
+            width: 120px;
+            height: auto;
+            padding: 6px 10px;
+            font-size: 10px;
+        }
+
+        @media screen and (max-width:575px) {
+            width: 140px;
+            height: 31px;
+            font-size: 12px;
+            padding: 8px 16px;
+        }
+
+    }
+
+    &__txt {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #626B71;
+        margin-bottom: 12px;
+
+        @media screen and (max-width:1200px) {
+            font-size: 12px;
+        }
+    }
+
+    &__info {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2E2F31;
+        margin-bottom: 22px;
+
+        @media screen and (max-width:1200px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:991px) {
+            margin-bottom: 16px;
+        }
+
+    }
+
+    &__info-blue {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #484BA1;
+
+        @media screen and (max-width:991px) {
+            font-size: 14px;
+        }
+
+    }
+
+    &__text-list {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        list-style-type: none;
+        color: #5B697C;
+        margin-left: 22px;
+
+        @media screen and (max-width:575px) {
+            font-size: 12px;
+        }
+
+    }
+
+    &__text-list::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #269CE5;
+        left: 16px;
+        padding-right: 10px;
+        margin-top: 10px;
+
+
+    }
+
+    &__subtitle-sidebar {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #2E2F31;
+        margin-bottom: 35px;
+
+        @media screen and (max-width:1200px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width:991px) {
+            font-size: 14px;
+        }
+
+    }
+
+    &__text-list-sidebar {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        list-style-type: none;
+        color: #5B697C;
+        margin-left: 22px;
+
+        @media screen and (max-width:991px) {
+            font-size: 12px;
+        }
+    }
+
+    &__text-list-sidebar::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #269CE5;
+        left: 15%;
+        padding-right: 10px;
+        margin-top: 10px;
+
+
+        @media screen and (max-width:991px) {
+            left: 15%;
+        }
+
+        @media screen and (max-width:670px) {
+            left: 10%;
+        }
+
+        @media screen and (min-width:1300px) {
+            left: 12%;
+        }
+    }
+
+
+    &__text-list-color {
+        color: #5B697C;
+    }
+
+    &__subtitle-margin {
+        padding-bottom: 64px;
+
+        @media screen and (max-width:991px) {
+            padding-bottom: 30px;
+        }
+
+    }
+
+    &__chart {
+        margin-bottom: 64px;
+
+        @media screen and (max-width:991px) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2E2F31;
+        margin-bottom: 22px;
+
+        @media screen and (max-width:991px) {
+            font-size: 14px;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #269CE5;
+        margin-bottom: 20px;
+
+        @media screen and (max-width:991px) {
+            font-size: 14px;
+        }
+
+    }
+
+    // BEM modifiers
+    // TODO: add code
+}

@@ -1,0 +1,180 @@
+/**
+ * Styles for the ad slot competition block.
+ */
+.profitability-ad-slot-competition {
+    background: #F6F6F6;
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        padding-top: 147px;
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+            padding-top: 0px;
+        }
+    }
+
+    &__block {
+        @media(max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__block-mobil {
+        display: none;
+        position: relative;
+
+        @media(max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__img-mobil {
+        position: absolute;
+        right: 90px;
+        top: 88px;
+        width: 81px;
+    }
+
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2E2F31;
+
+        @media(max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #5B697C;
+        max-width: 542px;
+        width: 100%;
+        margin-top: 26px;
+    }
+
+    &__btn {
+        margin-top: 38px;
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__rectangle {
+        width: 318px;
+        height: 26px;
+        position: absolute;
+        top: 102px;
+        left: 95px;
+        background-color: #EBB63E;
+    }
+
+    &__rectangle-second {
+        width: 318px;
+        height: 40px;
+        position: absolute;
+        bottom: 172px;
+        left: 95px;
+        background-color: #EBB63E;
+    }
+
+    &__img {
+        position: absolute;
+        top: 195px;
+        width: 150px;
+        height: 124px;
+        right: 211px;
+    }
+
+    &__line {
+        position: absolute;
+        width: 303px;
+        height: 1px;
+        top: 110px;
+        right: 85px;
+        background-color: #EBB63E;
+    }
+
+    &__line-block {
+        position: absolute;
+        width: 56px;
+        height: 32px;
+        background-color: #EBB63E;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        top: 96px;
+        right: 30px;
+    }
+
+    &__line-second {
+        position: absolute;
+        width: 149px;
+        height: 1px;
+        top: 280px;
+        right: 63px;
+        background-color: #EBB63E;
+    }
+
+    &__line-block-second {
+        position: absolute;
+        width: 47px;
+        height: 32px;
+        background-color: #EBB63E;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        top: 266px;
+        right: 29px;
+    }
+
+    &__line-third {
+        position: absolute;
+        width: 325px;
+        height: 1px;
+        top: 379px;
+        right: 64px;
+        background-color: #EBB63E;
+    }
+
+    &__line-block-third {
+        position: absolute;
+        width: 47px;
+        height: 32px;
+        background-color: #EBB63E;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        top: 364px;
+        right: 29px;
+    }
+
+    &__block-second {
+        margin-left: 50px;
+
+        @media(max-width: 768px) {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15px;
+        }
+    }
+}

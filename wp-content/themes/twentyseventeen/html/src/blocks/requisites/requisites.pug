@@ -1,0 +1,125 @@
+//-
+	name: requisites
+	description: Markup for the requisites block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin requisites(props = {}, activeIndex)
+	.requisites
+		.top
+			.row
+				.column.large-12
+					.top__content
+						h2.top__title Документы
+						.top__container
+							.top__info
+								.top__text.text Мы придерживаемся принципов прозрачности и открытости нашего бизнеса, поэтому Вы всегда можете ознакомиться с оригиналами всех правоустанавливающих документов в офисе компании
+							.top__action
+								a.top__button.button.button_transparent(href='/request/consult') Бесплатная консультация
+		.layout__content
+			.row
+				.column.large-12
+					.disclosure-page
+						form.disclosure-page__form(action='', data-document-selector='')
+							.disclosure-page__form-label
+								label.label(for='CategorySelectorForm_categories') Выберите подраздел
+							.disclosure-page__form-input
+								select#CategorySelectorForm_categories
+									option(value='information-disclosure.html') Уставные документы
+									option(value='dogovor.html') Договор на оказание услуг
+									option(value='elektronnye-torgovye-ploshchadki.html') Электронные торговые площадки
+									option(value='rekvizity.html', selected) Реквизиты
+						.disclosure-page__content
+							.disclosure-page__text-block
+								.disclosure-page__article-header
+									.disclosure-page__article-title Реквизиты
+									a.disclosure-page__full-link(href='./assets/documents/_Unitrust.Capital.pdf', target='_blank') Скачать одним документом
+								article.disclosure-page__text
+									table(style='height: 240px;', width='756')
+										tbody
+											tr
+												td(style='width: 370px;') Полное наименование организации
+												td(style='width: 370px;') Общество с ограниченной ответственностью «ЮНИТРАСТ КЭПИТАЛ»
+											tr
+												td(style='width: 370px;') Сокращенное наименование организации
+												td(style='width: 370px;') ООО «ЮНИТРАСТ»
+											tr
+												td(style='width: 370px;') Наименование на английском языке
+												td(style='width: 370px;') Unitrust Capital LLC
+											tr
+												td(style='width: 370px;') Юридический адрес
+												td(style='width: 370px;')
+													| 105005, Москва, улица Бауманская, дом 7, строение 1, этаж 2, помещение 1, комната 24 (офис 200)
+											tr
+												td(style='width: 370px;') Фактический адрес
+												td(style='width: 370px;')
+													| 105005, Москва, улица Бауманская, дом 7, строение 1, этаж 2, помещение 1, комната 24 (офис 200)
+											tr
+												td(style='width: 370px;') Почтовый адрес
+												td(style='width: 370px;')
+													| 105005, Москва, улица Бауманская, дом 7, строение 1, этаж 2, помещение 1, комната 24 (офис 200)
+											tr
+												td(style='width: 370px;') ОГРН
+												td(style='width: 370px;') 1187746679163
+											tr
+												td(style='width: 370px;') ИНН
+												td(style='width: 370px;') 9701114482
+											tr
+												td(style='width: 370px;') КПП
+												td(style='width: 370px;') 770101001
+											tr
+												td(style='width: 370px;') Наименование банка
+												td(style='width: 370px;')  ПАО «Сбербанк»
+											tr
+												td(style='width: 370px;') Расчетный счет
+												td(style='width: 370px;')  40701.810.6.38000002038
+											tr
+												td(style='width: 370px;') БИК
+												td(style='width: 370px;')  044525225
+											tr
+												td(style='width: 370px;') Кор. счет
+												td(style='width: 370px;')  30101810400000000225
+											tr
+												td(style='width: 370px;') ОКВЭД
+												td(style='width: 370px;')  69.10
+											tr
+												td(style='width: 370px;') ОКПО
+												td(style='width: 370px;')  31665934
+											tr
+												td(style='width: 370px;') ОКОГУ
+												td(style='width: 370px;')  4210014
+											tr
+												td(style='width: 370px;') ОКФС
+												td(style='width: 370px;')  16
+											tr
+												td(style='width: 370px;') ОКОПФ
+												td(style='width: 370px;')  12300
+											tr
+												td(style='width: 370px;') ОКАТО
+												td(style='width: 370px;')  45286555000
+											tr
+												td(style='width: 370px;') ОКТМО
+												td(style='width: 370px;')  45375000000
+											tr
+												td(style='width: 370px;') Телефоны
+												td.call_phone_rekvizity(style='width: 370px;')
+													p +7 (495) ​648 66 75
+													p 8 (800) ​333 53 01
+											tr
+												td(style='width: 370px;') E-mail
+												td(style='width: 370px;')  info@unitrust.capital
+											tr
+												td(style='width: 370px;') Сайт
+												td(style='width: 370px;')
+													a(href='https://www.unitrust.capital/') www.unitrust.capital
+											tr
+												td(style='width: 370px;') Генеральный директор
+												td(style='width: 370px;')  Ковалевич Евгений Валерьевич
+											tr
+												td(style='width: 370px;')  E-mail 
+												td(style='width: 370px;')  ceo@unitrust.capital
+							.disclosure-page__navigator
+								ul.disclosure-page__navigator-list
+									li.disclosure-page__navigator-item
+										each val, index in props.items
+											a.disclosure-page__navigator-link(href=val.link, data-document-link=index-1, class=`${activeIndex == index ? '_active' : ''}`)!= val.text

@@ -1,0 +1,76 @@
+/**
+ * Styles for the how we are working deal block.
+ */
+.how-we-are-working-deal {
+    .about-china__subtittle {
+        max-width: 553px;
+        width: 100%;
+
+    }
+
+    .about-china__info {
+        margin-top: 150px;
+        float: right;
+        margin-right: -49px;
+    }
+
+    .about-china__images {
+        margin-top: 0;
+    }
+
+    .about-china__blog {
+        margin-top: 145px;
+        margin-left: 0;
+    }
+
+    &__btn {
+        display: flex;
+        margin-bottom: 17px;
+        color: #3EA6E7;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+
+    .icon-contacts {
+        margin-left: 24px;
+    }
+
+    .about-china__knopka {
+        background: #3EA6E7;
+        border-radius: 100px;
+        margin-top: 14px;
+        padding: 21px 23px 21px 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:hover {
+            background-color: #5CBCF8;
+        }
+    }
+
+    &__footer-block {
+        background-color: #fff;
+        display: flex;
+        padding: 51px 0;
+        padding-left: 47px;
+        justify-content: space-between;
+    }
+
+    &__footer-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        color: #203752;
+
+    }
+}

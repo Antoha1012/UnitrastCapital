@@ -1,0 +1,41 @@
+// styles goes here
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../../node_modules/aos/src/sass/aos";
+
+@import "../../blocks/remodal/remodal";
+@import "./node_modules/swiper/css/swiper.min";
+
+@import "../../blocks/header/header";
+@import "../../blocks/footer/footer";
+@import "../../blocks/footer-bottom/footer-bottom";
+@import "../../blocks/content-header/content-header";
+
+@import "../../blocks/about-china/about-china";
+@import "../../blocks/about-history/about-history";
+
+@import "../../blocks/examples-invest/examples-invest";
+
+@import "../../blocks/online-business-investment-conditions/online-business-investment-conditions";
+@import "../../blocks/online-business-investment-investments-in-it/online-business-investment-investments-in-it";
+@import "../../blocks/online-business-investment-innovation/online-business-investment-innovation";
+@import "../../blocks/online-business-investment-products/online-business-investment-products.scss";
+
+@import "../../blocks/profitability-conditions/profitability-conditions.scss";
+@import "../../blocks/profitability-tesla/profitability-tesla";
+@import "../../blocks/profitability-profitable-advertising/profitability-profitable-advertising";
+@import "../../blocks/profitability-ad-slot-competition/profitability-ad-slot-competition";
+@import "../../blocks/profitability-advertising-systems/profitability-advertising-systems.scss";
+@import "../../blocks/profitability-revenue-generation/profitability-revenue-generation";
+@import "../../blocks/profitability-calculator/profitability-calculator";
+
+@import "../../blocks/detailed-business-description-faq/detailed-business-description-faq";
+@import "../../blocks/detailed-business-description-invest/detailed-business-description-invest";
+@import "../../blocks/detailed-business-description-onlin-services/detailed-business-description-onlin-services";
+
+@import "../../blocks/how-we-are-working-china/how-we-are-working-china";
+@import "../../blocks/how-we-are-working-deal/how-we-are-working-deal";
+@import "../../blocks/how-we-are-working-it/how-we-are-working-it";
+@import "../../blocks/how-we-are-working-it-benefits/how-we-are-working-it-benefits";
+
+@import "../../blocks/content-header-invest/content-header-invest";
+@import "../../blocks/send-request/send-request";

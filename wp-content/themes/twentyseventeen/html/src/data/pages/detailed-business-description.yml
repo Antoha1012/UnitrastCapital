@@ -1,0 +1,15 @@
+---
+  contentHeaderDetailed:
+    title: Главная
+    breadcrumbs: —
+    subtitle: Объекты торгов
+    headear: Объекты торгов
+    item:
+      - texts: Недвижимость
+        links: http://lexus24v.beget.tech/about.html
+      - texts: Спецтехника
+        links: http://lexus24v.beget.tech/about.html
+      - texts: Оборудование
+        links: http://lexus24v.beget.tech/about.html
+      - texts: Права требования
+        links: http://lexus24v.beget.tech/about.html

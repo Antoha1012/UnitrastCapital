@@ -1,0 +1,35 @@
+
+//- //- Common Block Imports
+//- include ../blocks/common/icon/icon.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        if data.pageTitle
+            title #{data.pageTitle} | #{data.siteTitle}
+        else
+            title #{data.siteTitle} &#8211; #{data.siteTagline}
+        <meta name="description" content="Компания активно развивается и на сегодняшний день является крупнейшим в России профессиональным участником торгов по банкротству, осуществляющим свою деятельность практически во всех регионах РФ." />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest.txt">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        script(src='https://kit.fontawesome.com/ae048bf3d9.js', crossorigin='anonymous')
+        link(rel="stylesheet", href="./assets/css/custom.css")
+
+    body
+        block page
+
+        //- block scripts      
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/mains.js"></script>
+        <script src="./assets/js/main.js"></script>

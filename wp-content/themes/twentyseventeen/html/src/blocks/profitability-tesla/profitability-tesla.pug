@@ -1,0 +1,24 @@
+//-
+    name: profitability-tesla
+    description: Markup for the profitability-tesla block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin profitability-tesla(props = {})
+    .profitability-tesla
+        .container.profitability-tesla__container
+            .row
+                .col-md-4.col-12
+                    .profitability-tesla__content                    
+                        .profitability-tesla__img
+                            img.profitability-tesla__images(src="./assets/img/Tesla.png", alt="")
+                .col-md-8.col-12
+                    .profitability-tesla__info
+                        h2.profitability-tesla__tittle
+                            | Впечатляющий пример доходности 
+                            br
+                            | 2020 года от акций Tesla Motors
+                        ul.profitability-tesla__list
+                            li.profitability-tesla__text Всего за 5 месяцев акции Tesla принесли своим инвесторам более 375% дохода
+                            li.profitability-tesla__text Инвесторы открыли длинную позицию в начале октября 2019 года по $240 за акцию Tesla, закрыв ее в конце февраля 2020 года по $915 за акцию
+                            li.profitability-tesla__text Резкий рост произошел на фоне выполнения обещаний автоконцерном по перевыполнению плана производства и продажам автомобилей 

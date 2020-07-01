@@ -1,0 +1,37 @@
+/**
+ * Styles for the profitability calculator block.
+ */
+.profitability-calculator {
+    .calculator__file-link {
+        display: flex;
+        position: relative;
+        width: 58px;
+        height: 67px;
+        background-image: url('../img/file.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .top__title{
+        padding-top: 70px;
+        padding-bottom: 50px;
+        @media(max-width: 768px){
+            padding-top: 34px;
+            padding-bottom: 24px;
+        }
+    }
+    .calculator__select select {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 32px;
+    }
+
+    .calculator__select {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        background: url('../img/to-bot.svg') no-repeat calc(100% - 18px) center;
+    }
+}

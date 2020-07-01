@@ -1,0 +1,489 @@
+/**
+ * Styles for the how block.
+ */
+.interfin {
+    margin-top: 151px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 6px;
+}
+
+@media(max-width:767px) {
+    .interfin {
+        margin-top: 20px;
+    }
+}
+
+.how .intrfin__title {
+    font-size: 30px;
+    max-width: 421px;
+    color: #203752;
+    margin-top: 9px;
+}
+
+@media(max-width:425px) {
+    .how .intrfin__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .how .intrfin__subtitle {
+
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+}
+
+.how .intrfin__subtitle {
+    max-width: 474px;
+    color: #5B697C;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.how .interfin__btn {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 59px;
+    color: #3EA6E7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.calc-hows {
+    font-size: 11px;
+    margin-left: 6px;
+    margin-top: 1px;
+}
+
+.intrfin__title span {
+    color: #203752;
+}
+
+
+@media (min-width: 768px) {
+    .how .strategies-adviser__person-photo {
+        max-width: 100%;
+        margin-top: -20px;
+        margin-right: 65px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .how .strategies-adviser__person-info {
+        left: 58%;
+        top: 12%;
+    }
+}
+
+.intrfin__title {
+    font-size: 22px;
+    max-width: 300px;
+    color: #3C5068;
+}
+
+.intrfin__subtitle {
+    margin: 20px 0;
+    max-width: 420px;
+    color: #B1B8C1;
+}
+
+.interfin__btn {
+    color: #3EA6E7;
+
+}
+
+.abouts {
+    margin-left: 160px;
+}
+
+.strategies-adviser__person-desc {
+    color: #DDDFE2;
+    line-height: 1.5;
+}
+
+@media (min-width: 1230px) {
+    .how .press-index__head {
+
+        margin-bottom: -5px;
+    }
+}
+
+
+
+@media (min-width: 1230px) {
+    .how {
+        padding: 0;
+    }
+}
+
+.how__text--spacing {
+    letter-spacing: 0.68px;
+}
+
+.how .how__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 22px;
+
+    @media screen and (max-width: 1200px) {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .how .how__name {
+
+        // margin-left: 23px;
+    }
+}
+
+@media (max-width: 767px) {
+    .how .interfin__btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.how .how__text {
+    margin-left: 22px;
+    margin-bottom: -3px;
+
+
+    @media screen and (max-width: 1200px) {
+        margin-left: 0;
+    }
+}
+
+.how .how__text--padding {
+    letter-spacing: 0.2px;
+}
+
+@media (min-width: 1230px) {
+
+    .how .title_medium,
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .how .press-index__menu {
+        margin: 0px -11px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .how .press-index {
+        margin-bottom: -1px;
+        padding-top: 42px;
+    }
+}
+
+
+.strategies-adviser__person-info {
+    position: absolute;
+    top: 10%;
+    left: 60%
+}
+
+@media(max-width:767px) {
+    .interfin__second {
+        display: none !important;
+    }
+}
+
+
+@media(min-width:768px) {
+    .strategies-adviser__person-info {
+        left: 48%;
+        top: 19%;
+    }
+}
+
+@media(min-width:1024px) {
+    .strategies-adviser__person-info {
+        left: 55%;
+        top: 19%;
+    }
+}
+
+@media(min-width:1024px) {
+    .strategies-adviser__person-info {
+        left: 64%;
+
+    }
+}
+
+
+
+
+.strategies-adviser__person-name {
+    margin-bottom: 10px;
+    color: #BAC0C9;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.33px;
+    text-transform: uppercase;
+}
+
+.strategies-adviser__person-desc {
+    color: #888;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.strategies-adviser__person-photo {
+    display: block;
+    max-width: 100%;
+    margin-top: -80px;
+    height: auto
+}
+
+@media(min-width:375px) {
+    .strategies-adviser__person-photo {
+        margin-top: 0px;
+        margin-left: 19px;
+    }
+}
+
+@media(min-width:425px) {
+    .strategies-adviser__person-photo {
+        margin-top: -3px;
+        margin-left: 20px;
+    }
+}
+
+@media(min-width:768px) {
+    .strategies-adviser__person-photo {
+        max-width: 58%;
+        margin-top: -1px;
+        margin-left: 210px;
+    }
+}
+
+
+.interfin-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+
+@media(max-width:634px) {
+    .interfin-info {
+        flex-direction: column;
+    }
+
+}
+
+.how .interfin-body.national {
+    margin-top: 15px;
+}
+
+.interfin-info-text {
+    color: #B0B6BF;
+    margin-top: 50px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.interfin-info-text a {
+    color: #93CCF1;
+}
+
+.interfin-body {
+
+    @media screen and (max-width: 1200px) {
+        flex-basis: 33.33%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+.experts {
+    width: 165px;
+    height: 36px;
+    margin-left: 90px;
+    margin-bottom: -42px;
+
+}
+
+@media(max-width:634px) {
+    .experts {
+        margin-left: initial;
+    }
+
+}
+
+@media(max-width:634px) {
+    .expert {
+        padding-bottom: 10px;
+
+    }
+
+}
+
+.how .interfin-body {
+    margin-top: 28px;
+}
+
+.how .interfin-info-text {
+    color: #B0B6BF;
+    // margin-top: 27px;
+    line-height: 1.5;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.how .interfin-body.national img {
+    margin-left: 58px;
+}
+
+.how .interfin-body.naufor img {
+    margin-left: 30px;
+    transform: translateY(13px);
+
+    @media (max-width: 768px) {
+        transform: none;
+    }
+}
+
+.how .interfin-info-text--first {
+    margin-top: 79px;
+    max-width: 370px;
+    margin-left: 66px;
+}
+
+.how .interfin-info-text--second {
+    max-width: 506px;
+    margin-left: 66px;
+    margin-top: 5px;
+}
+
+.how .interfin-info-text--third {
+    max-width: 506px;
+    margin-left: 37px;
+}
+
+.naufor {
+    margin-right: 39px;
+    margin-left: 65px;
+    margin-top: 18px;
+
+    @media screen and (max-width: 1200px) {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:634px) {
+    .interfin-body {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+
+    }
+}
+
+
+
+
+.tx {
+    padding-left: 23px;
+    line-height: 1.8;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 43px;
+}
+
+.national {
+    margin-top: -12px;
+    margin-left: 31px;
+}
+
+@media(max-width:634px) {
+
+    .national {
+        margin-left: auto;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:634px) {
+
+    .naufor {
+        margin-right: auto;
+    }
+}
+
+.interfin-info-text-second {
+    margin: 10px;
+
+}
+
+.capital {
+    margin-top: 30px;
+}
+
+.reiting {
+    margin-top: 11px;
+}
+
+@media(max-width:768px) {
+    .how .interfin-body {
+        margin-top: 0px;
+    }
+
+    .how .interfin-info-text {
+        color: #B0B6BF;
+        // margin-top: 27px;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+
+    .how .interfin-body.national img {
+        margin: 0;
+    }
+
+    .how .interfin-body.naufor img {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .how .interfin-info-text--first {
+        margin: 0 auto;
+    }
+
+    .how .interfin-info-text--second {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .how .interfin-info-text--third {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .experts {
+        margin: 0;
+        margin-bottom: 20px;
+    
+    }
+
+}

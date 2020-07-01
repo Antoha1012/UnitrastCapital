@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,130,48" preserveAspectRatio="none" class="UITradingChartMiniPure__svg_zhYL8" data-qa-node="svg" data-qa-file="UITradingChartMiniPure">
+    <g data-qa-node="g" data-qa-file="UITradingChartBasePure">
+        <defs data-qa-node="defs" data-qa-file="UITradingChartBasePure">
+            <linearGradient id="poly9003" x1="0%" y1="0%" x2="0%" y2="100%" data-qa-node="linearGradient" data-qa-file="UITradingChartBasePure">
+                <stop offset="0%" style="stop-color: #C4EAA7; stop-opacity: 1;" data-qa-node="stop" data-qa-file="UITradingChartBasePure"></stop>
+                <stop offset="100%" style="stop-color: #C4EAA7; stop-opacity: 0;" data-qa-node="stop" data-qa-file="UITradingChartBasePure"></stop>
+            </linearGradient>
+        </defs>
+        <polygon stroke="none" fill="url(#poly9003)" points="0,48 0,48 11,44 22,37 32,30 43,34 54,37 65,39 76,40 87,35 98,27 108,10 119,0 130,3 130,48" data-qa-node="polygon" data-qa-file="UITradingChartBasePure"></polygon>
+        <polyline stroke-width="1.01" stroke="#C4EAA7" fill="none" points="0,48 11,44 22,37 32,30 43,34 54,37 65,39 76,40 87,35 98,27 108,10 119,0 130,3" data-qa-node="polyline" data-qa-file="UITradingChartBasePure"></polyline>
+    </g>
+</svg>

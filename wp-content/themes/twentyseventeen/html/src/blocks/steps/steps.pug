@@ -1,0 +1,68 @@
+//-
+    name: steps
+    description: Markup for the steps block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin steps(props = {})
+    .steps
+        .row
+            .column.large-12
+                .press-index
+                    .press-index__head
+                        .press-index__title.title.title_medium Преимущество
+                        .press-index__menu
+                            ul.press-index__tabs.smart-tabs
+                                li.press-index__tab.smart-tab._active
+                                    a.press-index__tab-link(href='index.html#tab-publications', title='Онлайн бизнес')
+                                        span.press-index__tab-name Онлайн бизнес
+                                li.press-index__tab.smart-tab
+                                    a.press-index__tab-link(href='index.html#tab-novosti-o-kompanii', title='Наша работа')
+                                        span.press-index__tab-name Наша работа
+                                li.press-index__tab.smart-tab
+                                    a.press-index__tab-link(href='index.html#tab-stati', title='IT Рынок ')
+                                        span.press-index__tab-name IT Рынок                         
+                ul.steps-list
+                            li.steps-list__item._small._small-first
+                                a(href="")
+                                    .steps-block._invest101
+                                        .steps-block__title Ваша собственность
+                                        .steps-block__text 
+                                            | Владейте и богатейте. Высокая ликвидность, рост стоимости IT-бизнесов и смежных рыноков
+                                        .interfin__btn Что такое IT-бизнес
+                                            span.arrow-link__arrow
+                                                i.fas.fa-chevron-right.calc-steps
+                            li.steps-list__item._wide
+                                a(href="")
+                                    .steps-block._argus
+                                        .steps-block-info
+                                            .steps-block__title Источник надежного дохода
+                                            .steps-block__text 
+                                                | Получайте 40% годовых в рублях или валюте на монетизации рекламой и услугами
+                                            .interfin__btn Как это работает
+                                                span.arrow-link__arrow
+                                                    i.fas.fa-chevron-right.calc-steps
+                                        .steps-block__img-first
+                                            img(src="./assets/img/un-2-1_03.png", alt="", width="240")
+                            li.steps-list__item._wide._small-first
+                                a(href="")
+                                    .steps-block._argus
+                                        .steps-block-info
+                                            .steps-block__title.steps-block__title--argus 
+                                                | Ваша безопасность во время кризиса
+                                            .steps-block__text 
+                                                | Самая быстрорастущая и надежная ниша, IT-бизнес показывают динамику роста
+                                            .interfin__btn Подробнее
+                                                span.arrow-link__arrow
+                                                    i.fas.fa-chevron-right.calc-steps
+                                        .steps-block__img
+                                            img(src="./assets/img/un-2-1_07.jpg", alt="", width="270")
+                            li.steps-list__item._small
+                                a(href="")
+                                    .steps-block._courses
+                                        .steps-block__title Полный пассив
+                                        .steps-block__text 
+                                            | Мы все сделаем за вас: возьмем под контроль и  развитие ваш IT-бизнес и улучшим результаты. Доверьте ваш бизнес экспертам
+                                        .interfin__btn Наши услуги
+                                            span.arrow-link__arrow
+                                                i.fas.fa-chevron-right.calc-steps

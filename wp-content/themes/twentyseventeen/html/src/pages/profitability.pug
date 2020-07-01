@@ -1,0 +1,30 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/profitability-revenue-generation/profitability-revenue-generation.pug
+include ../blocks/profitability-calculator/profitability-calculator.pug
+include ../blocks/profitability-profitable-advertising/profitability-profitable-advertising.pug
+include ../blocks/profitability-ad-slot-competition/profitability-ad-slot-competition.pug
+include ../blocks/profitability-tesla/profitability-tesla.pug
+include ../blocks/profitability-advertising-systems/profitability-advertising-systems.pug
+include ../blocks/profitability-conditions/profitability-conditions.pug
+include ../blocks/about-china/about-china.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+block page
+	+header
+	+profitability-revenue-generation
+	+profitability-calculator
+	+profitability-profitable-advertising
+	+profitability-ad-slot-competition
+	+profitability-tesla
+	+profitability-advertising-systems
+	+profitability-conditions
+	+about-china(data.ChinaTittle)
+	+how-second
+	+bottom-form
+	+footer
+	+footer-bottom

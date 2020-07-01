@@ -1,0 +1,355 @@
+//-
+	name: conditions
+	description: Markup for the conditions block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin profitability-conditions(props = {})
+	.conditions
+		.conditions__head
+			.row
+				.column
+					.conditions__top
+						h2.conditions__title
+							| Как получаете доход
+						ul.conditions__tabs.smart-tabs
+							li.conditions__tab.smart-tab
+								a.conditions__tab-link(href='vekselnaya-programma.html#tab-1', title='Для физических лиц')
+									span.conditions__tab-name
+										| Международные сети
+							li.conditions__tab.smart-tab._active
+								a.conditions__tab-link(href='vekselnaya-programma.html#tab-2', title='Для юридических лиц')
+									span.conditions__tab-name
+										|Российские сети
+			#tab-1.conditions__wrap.smart-content
+				.conditions__rates
+					.row
+						.column
+							.rates
+								.rates__main
+									.rates__content
+										.rates__table-wrap
+											table.rates__table
+												thead.rates__thead
+													tr.rates__tr
+														th.rates__th 
+														th.rates__th
+															| 250 000 –
+															br
+															| 999 000 ₽
+														th.rates__th
+															| 1 000 000 –
+															br
+															| 2 499 000 ₽
+														th.rates__th
+															| 2 499 000 –
+															br
+															| 4 999 000 ₽
+														th.rates__th
+															| от 5 000 000 ₽
+												tbody.rates__tbody
+													tr.rates__tr
+														td.rates__td
+															| 3-11 мес.
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray.rates__td-name_first
+																| 14
+																| %
+															br
+															span.rates__td-name_black 16 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 15
+																| %
+															br
+															span.rates__td-name_black 17 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 16
+																| %
+															br
+															span.rates__td-name_black 18 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 18
+																| %
+															br
+															span.rates__td-name_black 20 %
+													tr.rates__tr
+														td.rates__td
+															| 12-23 мес.
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 16
+																| %
+															br
+															span.rates__td-name_black 18 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 17
+																| %
+															br
+															span.rates__td-name_black 19 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 18
+																| %
+															br
+															span.rates__td-name_black 20 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 20
+																| %
+															br
+															span.rates__td-name_black 22 %
+													tr.rates__tr
+														td.rates__td
+															| 24-36 мес.
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 18
+																| %
+															br
+															span.rates__td-name_black 20 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 19
+																| %
+															br
+															span.rates__td-name_black 21 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 20
+																| %
+															br
+															span.rates__td-name_black 22 %
+														td.rates__td
+															span.rates__td-name.rates__td-name_gray
+																| 22
+																| %
+															br
+															span.rates__td-name_black 24 %
+									.rates__bottom
+										ul.rates__marks
+											li.rates__mark
+												.rates__mark-percent.rates__mark-percent_gray
+													| 16 %
+												.rates__mark-text
+													| процентная ставка при условии ежемесячной выплаты
+													| процентного дохода по векселю
+											li.rates__mark
+												.rates__mark-percent
+													| 18 %
+												.rates__mark-text
+													| процентная ставка при условии выплаты процентного дохода
+													| при погашении векселя – вы получаете дополнительные 2%
+													| пассивного дохода, если не будете изымать деньги из
+													| оборота компании и позволите им работать
+										.rates__warning
+											.rates__warning-icon
+												svg.svg-icon.icon-warning
+													use(xlink:href='/static/svg/sprite.svg#warning')
+											.rates__warning-text
+												| Для крупных инвесторов, планирующих разместить сумму от 10
+												| 000 000 ₽ процентная ставка может быть увеличена в
+												| индивидуальном порядке выше пределов, установленных
+												| вексельной программой.
+				#conditions-main-1.conditions__main
+					.row
+						.column
+							h2.conditions__title.conditions_title-table
+								| Ключевые условия вексельной программы
+							.conditions__key-table.conditions__key-table_individual
+								table.conditions__table
+									tbody
+										tr.conditions__tr
+											td.conditions__td
+												| Минимальная сумма
+											td.conditions__td
+												| 250 000 ₽
+										tr.conditions__tr
+											td.conditions__td
+												| Срок размещения
+											td.conditions__td
+												| От 3 до 36 месяцев
+										tr.conditions__tr
+											td.conditions__td
+												| Процентная ставка
+											td.conditions__td
+												| Дифференцированная. Зависит от суммы инвестиций, срока
+												| размещения денежных средств и порядка выплаты процентного дохода
+												| по векселю
+										tr.conditions__tr
+											td.conditions__td
+												| Начисление и выплата процентов
+											td.conditions__td
+												ul.conditions__table-items
+													li.conditions__table-item
+														| Ежемесячно
+													li.conditions__table-item
+														| Ежеквартально
+													li.conditions__table-item
+														| Ежегодно
+													li.conditions__table-item
+														| При погашении векселя (+2% к базовой процентной ставке)
+										tr.conditions__tr
+											td.conditions__td
+												| Выплата процентного дохода
+											td.conditions__td
+												ul.conditions__table-items
+													li.conditions__table-item
+														| Наличные выплаты в офисе компании
+													li.conditions__table-item
+														| Безналичные переводы
+										tr.conditions__tr
+											td.conditions__td
+												| Налогообложение
+											td.conditions__td
+												| С процентного дохода инвестора производится удержание
+												| подоходного налога НДФЛ 13% в соответствии с действующим
+												| налоговым законодательством РФ
+										tr.conditions__tr
+											td.conditions__td
+												| Пополнение суммы инвестиций
+											td.conditions__td
+												| Осуществляется путем приобретения дополнительных векселей
+										tr.conditions__tr
+											td.conditions__td
+												| Досрочное изъятие денежных средств
+											td.conditions__td
+												| Возможно путем реализации векселя на вторичном рынке, либо
+												| обратного выкупа векселя компанией с дисконтом
+										tr.conditions__tr
+											td.conditions__td
+												| Дополнительные условия
+											td.conditions__td
+												| По векселям номиналом свыше 10 000 000 ₽ процентная ставка
+												| обсуждается индивидуально и может превышать лимиты,
+												| установленные вексельной программой
+										tr.conditions__tr
+											td.conditions__td
+												| Необходимые документы
+											td.conditions__td
+												ul.conditions__table-items
+													li.conditions__table-item
+														| Паспорт РФ
+													li.conditions__table-item
+														| Свидетельство или номер ИНН
+								a.conditions__more(href='javascript:void(0);', title='Развернуть/Скрыть', data-toggle-link='', data-selector='.conditions__key-table_individual', data-toggle='conditions__key-table_opened')
+									span.conditions__more-name.conditions__more-name_open
+										| Подробнее
+									span.conditions__more-name.conditions__more-name_hide
+										| Скрыть
+			#tab-2.conditions__wrap.smart-content._active
+				.conditions__rates
+					.row
+						.column
+							.rates
+								.rates__main
+									.rates__content
+										.rates__table-wrap
+											table.rates__table
+												thead.rates__thead
+													tr.rates__tr
+														th.rates__th Рекламная система 
+														th.rates__th Возможности                                                         
+														th.rates__th Способ получения доходов                                                             
+														th.rates__th Валюта
+														th.rates__th Договор рекламных систем
+												tbody.rates__tbody
+													tr.rates__tr.conditions__border
+														td.rates__td.conditions__list
+															img(src="./assets/img/Googlelogo.png", alt="")
+														td.rates__td
+															ul.conditions__content
+																li.conditions__info - Реклама на сайтах
+																li.conditions__info - Реклама AdMob в приложениях
+																li.conditions__info - Реклама в видео, аудио и др.                                                           
+														td.rates__td
+															ul.conditions__cartoon
+																li.conditions__images
+																	img(src="./assets/img/mastercard.png", alt="")
+																li.conditions__images
+																	img(src="./assets/img/viza.png", alt="")
+																li.conditions__images
+																	img(src="./assets/img/PP.png", alt="")    
+																li.conditions__images
+																	img(src="./assets/img/viza.png", alt="")
+																li.conditions__images
+																	img(src="./assets/img/viza.png", alt="")                                                            
+														td.rates__td.conditions__currency RUB, USD, EUR, GPB, UAH JPY, CHF
+														td.rates__td
+															.conditions__icons
+																.conditions__icon
+																	.conditions__icon-text pdf
+																.conditions__name
+																	| Условия системы Goole (AdSense)
+													tr.rates__tr.conditions__border
+														td.rates__td.conditions__list
+															img(src="./assets/img/yandex.png", alt="")                                                            
+														td.rates__td
+															ul.conditions__content
+																li.conditions__info - Реклама на сайтах
+																li.conditions__info - Реклама в приложениях
+																li.conditions__info - Мобильная медиация
+																li.conditions__info - Реклама на мобильных
+																li.conditions__info - Реклама в видео, аудио и др.                                                          
+														td.rates__td
+															ul.conditions__photo
+																li.conditions__imag
+																	img(src="./assets/img/mastercard.png", alt="")
+																li.conditions__imag
+																	img(src="./assets/img/viza.png", alt="")
+																li.conditions__imag
+																	img(src="./assets/img/PP.png", alt="")                                                          
+														td.rates__td.conditions__currency RUB, USD, EUR, GPB, UAH
+														td.rates__td
+															.conditions__icons
+																.conditions__icon
+																	.conditions__icon-text pdf
+																.conditions__name
+																	| Условия системы Яндекс (РСЯ)                                                        
+													tr.rates__tr
+														td.rates__td.conditions__list
+															img(src="./assets/img/yandex.png", alt="")
+														td.rates__td
+															ul.conditions__content
+																li.conditions__info - Мобильная медиация
+																li.conditions__info - Реклама на мобильных
+																li.conditions__info - Реклама в видео, аудио и др.                                                            
+														td.rates__td
+															ul.conditions__photo
+																li.conditions__imag
+																	img(src="./assets/img/mastercard.png", alt="")
+																li.conditions__imag
+																	img(src="./assets/img/viza.png", alt="")
+																li.conditions__imag
+																	img(src="./assets/img/PP.png", alt="")
+														td.rates__td.conditions__currency RUB, USD, EUR, GPB, UAH
+														td.rates__td
+															.conditions__icons
+																.conditions__icon
+																	.conditions__icon-text pdf
+																.conditions__name
+																	| Условия системы Яндекс Директ
+													tr.rates__tr
+														td.td-link
+														td.td-link
+														td.td-link
+															a.index-bill__arrow-link.arrow-link(href='vekselnaya-programma.html')
+																span.arrow-link__text полный список систем
+									.rates__bottom
+										ul.rates__marks
+											li.rates__mark
+												.rates__mark-percent
+													| 15 %
+												.rates__mark-text Гарантируемый процент увеличения рекламных доходов IT бизнеса за год при использовании услуг управления монетизацией Интерфин Капитал
+											button.index-slider__form-button.button.conditions__btn(type="submit")
+												| подробнее об услуге
+												br.conditions__br
+												| управление монетизацией
+										.rates__warning
+											.rates__warning-icon
+												svg.svg-icon.icon-warning
+													use(xlink:href='./assets/img/sprite.svg#warning')
+											.rates__warning-text Интерфин Капитал поможет подключить ваш бизнес к любым видам рекламных систем, управлять и развивать монетизацию. Мы профессионально работаем со всеми видами рекламных систем.

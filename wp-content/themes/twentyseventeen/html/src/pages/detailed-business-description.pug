@@ -1,0 +1,24 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/content-header/content-header.pug
+include ../blocks/detailed-business-description-onlin-services/detailed-business-description-onlin-services.pug
+include ../blocks/send-request/send-request.pug
+include ../blocks/detailed-business-description-faq/detailed-business-description-faq.pug
+include ../blocks/detailed-business-description-invest/detailed-business-description-invest.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+block page
+	+header
+	+content-header(data.contentHeaderDetailed, 'detailed')
+	+detailed-business-description-onlin-services
+	+send-request
+	+detailed-business-description-faq
+	+detailed-business-description-invest
+	+bottom-form
+	+how-second
+	+footer
+	+footer-bottom

@@ -1,0 +1,24 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/content-header/content-header.pug
+include ../blocks/how-we-are-working-china/how-we-are-working-china.pug
+include ../blocks/how-we-are-working-deal/how-we-are-working-deal.pug
+include ../blocks/how-we-are-working-it/how-we-are-working-it.pug
+include ../blocks/how-we-are-working-it-benefits/how-we-are-working-it-benefits.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+
+block page
+	+header
+	+content-header(data.contentHeaderWorking, 'working')
+	+how-we-are-working-china
+	+bottom-form
+	+how-we-are-working-deal
+	+how-we-are-working-it
+	+how-we-are-working-it-benefits
+	+bottom-form
+	+footer
+	+footer-bottom

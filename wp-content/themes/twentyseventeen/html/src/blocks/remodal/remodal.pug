@@ -1,0 +1,21 @@
+mixin remodal
+    .remodal
+         .modal__bg.default.opened
+            .modal__layout.opened
+                .modal__container.default
+                    .remodal(data-remodal-id='modal')
+                        a.remodal-close(data-remodal-action="close")
+                        .modal__content
+                            form.ajax-form
+                                .ajax-form__container
+                                    .ajax-form__title 
+                                        | Договор личного
+                                        br
+                                        | поручительства
+                                    .ajax-form__description.text.text_small Для скачивания презентации введите электронную почту
+                                    .ajax-form__fields
+                                        .ajax-form__field
+                                            input#phone-field(type='email', placeholder='Укажите почту', autofocus='autofocus', im-insert='true')
+                                    .ajax-form__action
+                                        button.button.button_blue.button_wide(type='submit') Получить код
+                                    .ajax-form__agreement.agreement Отправляя форму, вы соглашаетесь с политикой конфиденциальности

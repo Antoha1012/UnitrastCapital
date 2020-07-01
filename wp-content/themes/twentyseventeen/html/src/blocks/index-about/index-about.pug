@@ -1,0 +1,52 @@
+//-
+    name: index-about
+    description: Markup for the index about block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin index-about(props = {})
+    .index-about-fixed
+        .row
+            .column
+                .index-about__tiles
+                    ul.large-block-grid-3.medium-block-grid-3
+                        li
+                            a.tile.tile_iso(href='vekselnaya-programma/garantii.html')
+                                span.tile__info
+                                    span.tile__top
+                                        span.tile__caption Безопасность
+                                        span.tile__arrow
+                                            svg(width='7px', height='10px', viewBox='0 0 7 10', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                                g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                                    g#arrow(transform='translate(-533.000000, -792.000000)', stroke='#3EA6E7', stroke-width='2')
+                                                        g(transform='translate(40.000000, 534.000000)')
+                                                            g(transform='translate(280.000000, 256.000000)')
+                                                                polyline#Path-2(transform='translate(216.000000, 7.000000) rotate(-360.000000) translate(-216.000000, -7.000000) ', points='214.027669 3 218 6.98611759 214 11')
+                                    span.tile__title Защита капитала
+                        li
+                            a.tile.tile_doc(href='about/disclosure.html')
+                                span.tile__info
+                                    span.tile__top
+                                        span.tile__caption Документы
+                                        span.tile__arrow
+                                            svg(width='7px', height='10px', viewBox='0 0 7 10', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                                g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                                    g#arrow(transform='translate(-533.000000, -792.000000)', stroke='#3EA6E7', stroke-width='2')
+                                                        g(transform='translate(40.000000, 534.000000)')
+                                                            g(transform='translate(280.000000, 256.000000)')
+                                                                polyline#Path-2(transform='translate(216.000000, 7.000000) rotate(-360.000000) translate(-216.000000, -7.000000) ', points='214.027669 3 218 6.98611759 214 11')
+                                    span.tile__title Раскрытие информации
+                        li
+                            a.tile.tile_cols(href='vekselnaya-programma.html#analytics-block')
+                                span.tile__info
+                                    span.tile__top
+                                        span.tile__caption Аналитика
+                                        span.tile__arrow
+                                            svg(width='7px', height='10px', viewBox='0 0 7 10', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                                g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                                    g#arrow(transform='translate(-533.000000, -792.000000)', stroke='#3EA6E7', stroke-width='2')
+                                                        g(transform='translate(40.000000, 534.000000)')
+                                                            g(transform='translate(280.000000, 256.000000)')
+                                                                polyline#Path-2(transform='translate(216.000000, 7.000000) rotate(-360.000000) translate(-216.000000, -7.000000) ', points='214.027669 3 218 6.98611759 214 11')
+                                    span.tile__title Сравнение инвестиций
+

@@ -1,0 +1,23 @@
+---
+relevant:
+  pressIndex:
+    title: Актуально o нас
+    items:
+    - link: index.html#tab-publications
+      title: Публикации в СМИ
+    - link: index.html#tab-novosti-o-kompanii
+      title: Рейтинги и награды
+    - link: index.html#tab-stati
+      title: Новости компании
+    - link: index.html#tab-negativ-v-seti
+      title: Блог
+how:
+  pressIndex:
+    title: Как мы работаем
+    items:
+    - link: index.html#tab-novosti-o-kompanii
+      title: Процесс работы
+    - link: index.html#tab-stati
+      title: Как формируется доход
+    - link: index.html#tab-negativ-v-seti
+      title: Гарантии

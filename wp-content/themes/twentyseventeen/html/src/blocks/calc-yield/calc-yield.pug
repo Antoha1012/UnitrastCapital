@@ -1,0 +1,119 @@
+//-
+    name: calc-yield
+    description: Markup for the calc yield block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin calc-yield(props = {})
+    .calc-yield
+        .row
+            .column.large-12
+                .press-index
+                    .press-index__head
+                        .press-index__title.title.title_medium Динамика IT-рынков
+                        .press-index__menu
+                            ul.press-index__tabs.smart-tabs
+                                li.press-index__tab.smart-tab._active
+                                    a.press-index__tab-link(href='index.html#tab-publications', title='Онлайн бизнес')
+                                        span.press-index__tab-name Интернет-реклама
+                                li.press-index__tab.smart-tab
+                                    a.press-index__tab-link(href='index.html#tab-novosti-o-kompanii', title='Наша работа')
+                                        span.press-index__tab-name E-commerce
+                                li.press-index__tab.smart-tab
+                                    a.press-index__tab-link(href='index.html#tab-stati', title='IT Рынок ')
+                                        span.press-index__tab-name Интернет-трафик
+                .calc__yield.with__graph.js-calc-yield
+                    .table.table_pifs-profit
+                        .table__tr.table__tr_head.mobil-head
+                            .table__th.m-pp-name Название рынка
+                            .table__th.m-pp-graph
+                            .table__th.m-pp-period За май
+                            .table__th.m-pp-period За 6 мес
+                            .table__th.m-pp-period За 1 год
+                            .table__th.m-pp-period За 3 год
+                            .table__th.m-pp-period За 10 лет
+                            .table__th.m-pp-period За все время
+                    .table.table_pifs-profit.body
+                        .table__tr.js-row(data-alias='opifa_akg')
+                            .table__td.m-pp-name
+                                span.table__td-mobile-label Название: 
+                                ul
+                                    li.table__td-li
+                                        a.table__td-link(href='/') Интернет-реклама (Россия)
+                            .table__td.m-pp-graph
+                                a.m-pp-graph-link(href='https://www.alfacapital.ru/disclosure/pifs/opifa_akg', style="width: 83px;display: block;")
+                                    img.m-pp-graph-img(src='./assets/img/spt-opifa_akg.svg', alt='')
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За май
+                                .table__td-mobile-count
+                                    span.table__td-text.up +12,44%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 6 месяцев
+                                .table__td-mobile-count
+                                    span.table__td-text.up +22,28%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 1 год
+                                .table__td-mobile-count
+                                    span.table__td-text.up +20,53%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 3 года
+                                .table__td-mobile-count
+                                    span.table__td-text.up +33,27%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 10 лет
+                                .table__td-mobile-count
+                                    span.table__td-text.up +46,64%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За все время
+                                .table__td-mobile-count
+                                    span.table__td-text.up +21,52%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                        .table__tr.js-row(data-alias='opifa_akt')
+                            .table__td.m-pp-name
+                                span.table__td-mobile-label Название: 
+                                ul
+                                    li.table__td-li
+                                        a.table__td-link(href='/') Интернет-реклама (Все странны)
+                            .table__td.m-pp-graph
+                                a.m-pp-graph-link(href='https://www.alfacapital.ru/disclosure/pifs/opifa_akt', style="width: 83px;display: block;")
+                                    img.m-pp-graph-img(src='./assets/img/spt-opifa.svg', alt='', width="300")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За май
+                                .table__td-mobile-count
+                                    span.table__td-text.up +12,11%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 6 месяцев
+                                .table__td-mobile-count
+                                    span.table__td-text.up +13,29%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 1 год
+                                .table__td-mobile-count
+                                    span.table__td-text.up +23,40%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 3 года
+                                .table__td-mobile-count
+                                    span.table__td-text.up +20,37%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За 10 лет
+                                .table__td-mobile-count
+                                    span.table__td-text.up +70,28%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                            .table__td.m-pp-period
+                                span.table__td-mobile-label.table__name-width За все время
+                                .table__td-mobile-count
+                                    span.table__td-text.up +282,29%
+                                        img.vector(src="./assets/img/vector.svg", alt="")
+                .calc__disclaimer
+                    span Вся информация носит исключительно
+                        a.open-discl(href='javascript:void(0);', onclick="app.slideside.open('disclaimer')")
+                            | справочно-информационный, аналитический и обзорный характер, предоставляется в исходном виде
+                        span.nobr УК «Интерфин Капитал»

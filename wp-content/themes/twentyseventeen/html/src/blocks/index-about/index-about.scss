@@ -1,0 +1,19 @@
+/**
+ * Styles for the index about block.
+ */
+.index-about-fixed {
+    background-color: white;
+}
+
+.index-about__tiles {
+    padding-top: 74px;
+}
+
+@media (max-width:768px) {
+    .index-about__tiles .tile__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.1;
+        display: block;
+    }
+}

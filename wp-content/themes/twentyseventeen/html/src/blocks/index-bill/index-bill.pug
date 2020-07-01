@@ -1,0 +1,85 @@
+//-
+    name: index-bill
+    description: Markup for the index bill block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin index-bill(props = {})
+    .index-bill
+    .row
+        .column.large-12
+            .index-bill
+                .index-bill__info.white-block.white-block_shadow
+                    .index-bill__info-top
+                        h2.index-bill__title Собственный IT-бизнес с пассивным доходом
+                             .workers-item.icons
+                                +icon('question')
+                                .workers-item__modal
+                                    .workers-item__head
+                                        span.workers-item__name Роман Елистратов
+                                        span.workers-item__profession.text.text_small
+                                            | Финансовый
+                                            | советник
+                                    .workers-item__body
+                                        span.workers-item__modal-description.text.text_small
+                                            | Хотите выгодно
+                                            | вложить деньги, но не знаете как? Банковские проценты уже не радуют? Хотите
+                                            | больше знать о гарантиях? Финансовый советник «Юнитраст Кэпитал» Роман
+                                            | Елистратов поможет Вам подобрать наиболее оптимальное решение для сохранения
+                                            | и преумножения собственного капитала! Обращайтесь!
+                                        a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-11-27/Scan_20191111_115735%20(1).jpg', data-fancybox='')
+                                            span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-11-27/18c991759a95bd1f95f457557123c8d1.jpg')")
+                                            span.workers-item__modal-sertificate-name
+                                                | Сертификат
+                                                | Рустехпром
+                                        a.workers-item__modal-sertificate-wrapper(href='https://unitrust.capital/media/About/Sertificate/2019-12-19/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%95%D0%BB%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D0%B2.jpg', data-fancybox='')
+                                            span.workers-item__modal-sertificate-image(style="background-image: url('https://unitrust.capital/media/About/Sertificate/2019-12-19/e7b9577a206979501a968464710264a2.jpg')")
+                                            span.workers-item__modal-sertificate-name
+                                                | Сертификат соответствия
+                                                | аудитора
+                                        .workers-item__social
+                                            .workers-item__modal-social
+                                                span.workers-item__modal-email elistratov@unitrust.capital                                               
+                        ul.index-bill__values-list
+                            li.index-bill__values-item
+                                .index-bill__value
+                                    .index-bill__top
+                                        span.index-bill__num 100 000
+                                        span.index-bill__sub-num ₽
+                                    .index-bill__description.text_small Минимальная сумма инвестиций
+                            li.index-bill__values-item
+                                .index-bill__value
+                                    .index-bill__top
+                                        span.index-bill__num 40
+                                        span.index-bill__sub-num %
+                                        span.index-bill__small-num годовых
+                                    .index-bill__description.text_small Средняя доходность готового IT-бизнеса
+                            li.index-bill__values-item
+                                .index-bill__value
+                                    .index-bill__top
+                                        span.index-bill__num 6 – 24
+                                        span.index-bill__sub-num мес.
+                                    .index-bill__description.text_small Средние сроки окупаемости вложений
+                    .index-bill__actions
+                        a.index-bill__button.button.button_transparent(href='https://unitrust.capital/request/consult', data-modal='', data-goal='success_main_order', data-goal-click='click_button_order') Подобрать бизнес
+                        a.index-bill__arrow-link.arrow-link(href='vekselnaya-programma.html')
+                            span.arrow-link__text Подробнее как это работает?
+                            span.arrow-link__arrow
+                               i.fas.fa-chevron-right
+                .index-bill__tiles
+                    .index-bill__tile
+                        a.tile.tile_calc(href='vekselnaya-programma.html')
+                            span.tile__info
+                                span.tile__top
+                                    span.tile__caption Калькулятор
+                                    span.tile__arrow
+                                        i.fas.fa-chevron-right.calc
+                                span.tile__title Рассчитайте Ваш доход
+                    .index-bill__tile
+                        a.tile.tile_car(href='catalog.html')
+                            span.tile__info
+                                span.tile__top
+                                    span.tile__caption Куда инвестировать
+                                    span.tile__arrow
+                                        i.fas.fa-chevron-right.calc-blue
+                                pan.tile__title Прибыльный IT-бизнес

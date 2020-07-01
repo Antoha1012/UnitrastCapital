@@ -1,0 +1,33 @@
+//-
+	name: profitability-ad-slot-competition
+	description: Markup for the ad slot competition block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin profitability-ad-slot-competition(props = {})
+	.profitability-ad-slot-competition
+		.profitability-ad-slot-competition__main
+			.profitability-ad-slot-competition__block
+				img(alt='', srcset='./assets/img/tablet-banners_1x.png, ./assets/img/tablet-banners_2x.png 2x')
+				.profitability-ad-slot-competition__rectangle(data-aos="fade-up", data-aos-duration="1000")
+				.profitability-ad-slot-competition__rectangle-second(data-aos="fade-up", data-aos-duration="1000")
+				.profitability-ad-slot-competition__line(data-aos="fade-right",data-aos-duration="500", data-aos-delay="200")
+				.profitability-ad-slot-competition__line-block(data-aos="fade-left",data-aos-duration="500", data-aos-delay="200")
+					p(data-aos="flip-up", data-aos-duration="1000", data-aos-delay="200") $$$
+				.profitability-ad-slot-competition__line-second(data-aos="fade-right",data-aos-duration="500", data-aos-delay="800")
+				.profitability-ad-slot-competition__line-block-second(data-aos="fade-left",data-aos-duration="500", data-aos-delay="800")
+					p(data-aos="flip-up", data-aos-duration="1000", data-aos-delay="800") $$
+				.profitability-ad-slot-competition__line-third(data-aos="fade-right",data-aos-duration="500", data-aos-delay="1400")
+				.profitability-ad-slot-competition__line-block-third(data-aos="fade-left",data-aos-duration="500", data-aos-delay="1400")
+					p(data-aos="flip-up", data-aos-duration="1000", data-aos-delay="1400") $$
+				img.profitability-ad-slot-competition__img(data-aos="fade-up", data-aos-duration="1000" src="./assets/img/kreditnaya-karta.png", alt="")
+			.profitability-ad-slot-competition__block-mobil
+				img(src="./assets/img/tablet-banners_m_1x.png", alt="")
+				img.profitability-ad-slot-competition__img-mobil(src="./assets/img/kreditnaya-karta.png", alt="")
+			.profitability-ad-slot-competition__block-second
+				h2.profitability-ad-slot-competition__title Конкуренция за рекламные места
+				p.profitability-ad-slot-competition__text За право показа на онлайн ресурсах соревнуются миллионы рекламодателей. Получайте отличный доход, сдавая в аренду рекламные места мировым компаниям и брендам!
+				p.profitability-ad-slot-competition__text В 2015 году владельцы IT бизнеса заработали только с помощью монетизации Google рекламой более 10 млрд. долларов США
+				a.index-bill__button.button.button_transparent.profitability-ad-slot-competition__btn(href='https://unitrust.capital/request/consult', data-modal='', data-goal='success_main_order', data-goal-click='click_button_order') Инвестировать в рекламный бизнес
+
+		

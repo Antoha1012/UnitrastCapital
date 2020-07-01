@@ -1,0 +1,63 @@
+//-
+    name: founders-about
+    description: Markup for the founders about block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin about-founders(props = {})
+    .about-founders
+        .top
+            .row
+                .column.large-12
+                    .top__content
+                        .top__container
+                            .top__info
+                                .about__top
+                                    .about__top-wrapper
+                                        .caption Немного о нас
+                                        h2.top__title Наши учредители успешно работают на торгах по банкротству с 2005 года
+                                        .text За это время мы выкупили и реализовали имущество организаций-банкротов на сумму более 1 млрд. рублей. Накопленный опыт позволил нам организовать работу собственной компании в 2018 году и продолжить развиваться под собственным брендом Unitrust Capital. Наша компания активно развивается и на сегодняшний день является крупнейшим в России профессиональным участником торгов по банкротству, осуществляющим свою деятельность практически во всех регионах РФ.
+                                    .about__image-slider
+                                        .row
+                                            .column
+                                                .image-slider
+                                                    ul.image-slider__list.image-slider-list(data-about-image='')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-12-18/%20%D1%84%D1%83%D1%80%D1%88%D0%B5%D1%82%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0.jpg', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-10-11/1%20(3).png', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-10-11/2%20(3).png', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-10-11/3%20(3).png', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-10-11/4%20(2).png', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-12-03/.png', alt='Image')
+                                                        li.image-slider-list__item
+                                                            img.image-slider-item(src='https://unitrust.capital/media/About/Images/2019-12-03/%202.png', alt='Image')
+                                                    .image-slider__arrows
+                                                        ul.arrows-slider
+                                                            li.arrows-slider__item.arrows-slider__left(data-about-left='')
+                                                                a.arrows-slider__link(href='javascript:void(0)')
+                                                                    span.arrows-slider__icon
+                                                                        svg(width='12px', height='18px', viewBox='0 0 12 18', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                                                            title Path 2 Copy 2
+                                                                            desc Created with Sketch.
+                                                                            g#left-arrow_Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                                                                g(id='left-arrow_о-компании', transform='translate(-1218.000000, -905.000000)', stroke='#3EA6E7', stroke-width='3')
+                                                                                    g#left-arrow_Group-10(transform='translate(770.000000, 528.000000)')
+                                                                                        g#left-arrow_Group-9(transform='translate(426.000000, 362.000000)')
+                                                                                            polyline#left-arrow_Path-2-Copy-2(transform='translate(28.500000, 24.000000) rotate(-180.000000) translate(-28.500000, -24.000000) ', points='24.585981 16.9441302 32.4689268 23.9755119 24.5310732 31.0558698')
+                                                            li.arrows-slider__item.arrows-slider__right(data-about-right='')
+                                                                a.arrows-slider__link(href='javascript:void(0)')
+                                                                    span.arrows-slider__icon
+                                                                        svg(width='12px', height='18px', viewBox='0 0 12 18', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                                                            // Generator: Sketch 53 (72520) - https://sketchapp.com
+                                                                            title Path 2 Copy 3
+                                                                            desc Created with Sketch.
+                                                                            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                                                                g(id='о-компании', transform='translate(-1278.000000, -905.000000)', stroke='#3EA6E7', stroke-width='3')
+                                                                                    g#Group-10(transform='translate(770.000000, 528.000000)')
+                                                                                        g#Group-9(transform='translate(426.000000, 362.000000)')
+                                                                                            polyline#Path-2-Copy-3(transform='translate(87.162598, 24.000000) rotate(-360.000000) translate(-87.162598, -24.000000) ', points='83.2485786 16.9441302 91.1315244 23.9755119 83.1936709 31.0558698')

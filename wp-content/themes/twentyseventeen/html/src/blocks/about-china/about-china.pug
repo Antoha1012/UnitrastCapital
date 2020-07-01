@@ -1,0 +1,47 @@
+//-
+	name: about-china
+	description: Markup for the about-china block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin about-china(props = {})
+	.about-china
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-4.d-xl-block.col-xl-4
+					.about-china__images
+						img.about-china__man(src="./assets/img/china.png", alt="")
+				.d-none.d-lg-block.col-lg-4.d-xl-block.col-xl-4
+					.about-china__info
+						p.about-china__names Алексей Иванов
+						p.about-china__information  Руководитель департамента управления бизнеса
+				.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+					.about-china__blog
+						h2.about-china__tittle!= props.title
+							span.about-china__title-text= props.text
+						p.about-china__subtittle При продаже инвестиционного пая Вам необходимо иметь (открыть, если нет) банковский счет, куда будут перечислены средства от погашения пая. Затем Вы подаете заявку на 
+						.about-china__page
+							ul.about-china__list
+								li.about-china__blocks
+									a.about-china__links(href="http://") Онлайн сервисы 
+								li.about-china__blocks
+									a.about-china__links(href="http://") Маркетплейсы
+								li.about-china__blocks
+									a.about-china__links(href="http://") Контентные площадки
+							ul.about-china__list
+								li.about-china__blocks
+									a.about-china__links(href="http://") Онлайн-СМИ
+								li.about-china__blocks
+									a.about-china__links(href="http://") iOS и Android приложения
+								li.about-china__blocks
+									a.about-china__links(href="http://") Fintech проекты
+							ul.about-china__list
+								li.about-china__blocks
+									a.about-china__links(href="http://") SaaS сервисы
+								li.about-china__blocks
+									a.about-china__links(href="http://") Интернет-магазины 
+								li.about-china__blocks
+									a.about-china__links(href="http://") Платежные сервисы
+							button.about-china__knopka СМОТРЕТЬ ПРИМЕРЫ IT  БИЗНЕСОВ
+								i.fas.fa-chevron-right(aria-hidden="true")
+

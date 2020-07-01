@@ -1,0 +1,19 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/content-header/content-header.pug
+include ../blocks/examples-invest/examples-invest.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+
+block page
+	+header
+	+content-header(data.contentHeaderExamples, 'examples')
+	+examples-invest
+	+how-second
+	+bottom-form
+	+footer
+	+footer-bottom

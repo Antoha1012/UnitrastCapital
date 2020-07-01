@@ -1,0 +1,21 @@
+siteTitle: "About"
+siteTagline: "Site About"
+
+contentHeaderAbout:
+  title: Главная
+  breadcrumbs: —
+  subtitle: О компании
+  headear: О компании
+  item:
+    - texts: О нас
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Отзывы
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Партнеры
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Карьера в компании
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Раскрытие информации
+      links: http://lexus24v.beget.tech/about.html
+ChinaTittleAbout:
+  title: Подбираем и работаем со <br> всеми видами IT-бизнесов

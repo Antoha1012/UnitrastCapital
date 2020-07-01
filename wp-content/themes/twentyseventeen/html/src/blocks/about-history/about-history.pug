@@ -1,0 +1,77 @@
+//-
+    name: history
+    description: Markup for the history block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin about-history(props = {})
+    .about-history
+        .background
+            .row
+                .column.large-12
+                    .ideas-container.ahead.mt-30
+                        .background__title Компания с большой историей
+                    .background__container-slider
+                        #history.history.swiper-container
+                            .swiper-wrapper
+                                .history__year.swiper-slide
+                                    .history__year_num 1996
+                                    span.history__buble
+                                    .history__bar
+                                        span.history__razfit Интерфин Капитал начала свое развитие под именем ЗАО «РК-Менеджмент» в 1996 году
+                                .history__year.swiper-slide
+                                    .history__bar
+                                        img.history__bar-img(src='./assets/img/gerb.jpg', alt='history')
+                                        span.history__razfit Топ-10 управляющая компания на рынке паевых фондов, победитель 2 государственных конкурсов
+                                        a.history__links(href="http://") Подробнее
+                                    .history__year_num 2006
+                                    span.history__buble
+                                .history__year.swiper-slide
+                                    .history__year_num 2012
+                                    span.history__buble
+                                    .history__bar
+                                        img.history__bar-img(src='./assets/img/blackblcok.png', alt='history')
+                                        span.history__it Группа IT экспертов по развитию онлайн - бизнеса принимают решение об учреждении совместного проекта по сопровождению сделок покупки и продаже онлайн - бизнеса, его развитии и монетизации.
+                                        a.history__links(href="http://") Подробнее
+                                .history__year.swiper-slide
+                                    .history__bar
+                                        img.history__bar-img(src='./assets/img/Gregoran.png', alt='history')
+                                        span.history__national Национальное Рейтинговое Агентство повысило индивидуальный рейтинг надежности ЗАО "Управляющая компания "Интерфин Капитал" до уровня "АА". Объем активов под управлением - 1,2 млрд.
+                                        a.history__links(href="http://") Подробнее
+                                    .history__year_num 2014
+                                    span.history__buble
+                                .history__year.swiper-slide
+                                    .history__year_num 2015
+                                    span.history__buble
+                                    .history__bar
+                                        img.history__bar-img(src='./assets/img/alfa-bank.png', alt='history' width="120px" height="136px")
+                                        span.history__razfit Смена деятельности компании, продажа активов под упправление «Альфа-капитал»
+                                        a.history__links(href="http://") Подробнее
+                                .history__year.swiper-slide
+                                    .history__bar
+                                        img.history__bar-img(src='./assets/img/gerb.jpg', alt='history')
+                                        span.history__razfit SiteZeus - приобретает ИТ и медиа-активы ЗАО Управляющая компания"Интерфин Капитал"
+                                        a.history__links(href="http://") Подробнее    
+                                    .history__year_num 2017
+                                    span.history__buble
+                                .history__year.swiper-slide
+                                    .history__year_num 2018
+                                    span.history__buble
+                                    .history__bar
+                                        span.history__it Учередили компании SiteZeus - принимают решение о перенятии УК Интерфин и далее вести деятельность под брендовым наименованием УК "Интерфин Капитал"
+                                        a.history__links(href="http://") Подробнее
+                                .history__year.swiper-slide
+                                    .history__bar
+                                        span.history__national Расширение сферы деятельности, консалтинг и управление IT и медиа активами
+                                        a.history__links(href="http://") Подробнее
+                                    .history__year_num 2019
+                                    span.history__buble
+                                .history__year.swiper-slide
+                                    .history__year_num 2020
+                                    span.history__buble
+                                    .history__bar
+                                        span.history__razfit Объединение деятальности Интерфин с консалтинговой компанией "Смарт Бизнес"
+                                        a.history__links(href="http://") Подробнее
+                                span.history__line
+                        .swiper-button-prev
+                        .swiper-button-next

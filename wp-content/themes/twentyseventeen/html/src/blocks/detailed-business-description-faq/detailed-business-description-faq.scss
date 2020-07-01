@@ -1,0 +1,13 @@
+/**
+ * Styles for the faq block.
+ */
+.detailed-business-description-faq {
+    .top__content{
+        margin-top: 64px;
+        margin-bottom: 32px;
+        @media(max-width: 768px){
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}

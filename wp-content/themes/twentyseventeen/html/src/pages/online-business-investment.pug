@@ -1,0 +1,27 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/content-header-invest/content-header-invest.pug
+include ../blocks/online-business-investment-conditions/online-business-investment-conditions.pug
+include ../blocks/about-china/about-china.pug
+include ../blocks/online-business-investment-investments-in-it/online-business-investment-investments-in-it.pug
+include ../blocks/online-business-investment-innovation/online-business-investment-innovation.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/online-business-investment-products/online-business-investment-products.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+block page
+	+header
+	+content-header-invest
+	+online-business-investment-conditions
+	+about-china(data.ChinaTittleBusiness)
+	+online-business-investment-investments-in-it
+	+online-business-investment-innovation
+	+online-business-investment-products
+	+how-second
+	+bottom-form
+	+footer
+	+footer-bottom
+	

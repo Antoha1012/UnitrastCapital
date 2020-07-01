@@ -1,0 +1,133 @@
+//-
+    name: online-business-investment-products
+    description: Markup for the online-business-investment-products block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin online-business-investment-products(props = {})
+    .online-business-investment-products
+        .container
+            h2.online-business-investment-products__title Сравнение инвестиционных продуктов
+            p.online-business-investment-products__subtitle Инструментов, доход по которым покрывает инфляция, вкупе с минимальным риском, практически нет. На рынке финансовых инструментов, пригодных для сохранения сбережений, и, вторично, для получения дохода можно выделить следующие их типы:
+            .online-business-investment-products__wrapper-container
+                .online-business-investment-products__wrapper
+                    table
+                        tr
+                            td
+                                .online-business-investment-products__name-wrapper
+                                    svg.svg-icon.icon-params.online-business-investment-products__params
+                                        use(xlink:href="./assets/img/sprite.svg#params")
+                                    h4.online-business-investment-products__name Параметр сравнения  
+                        tr
+                            td
+                                p.online-business-investment-products__rate Ставка 
+                        tr
+                            td
+                                p.online-business-investment-products__insurance Страховка
+                        tr
+                            td
+                                p.online-business-investment-products__amount Минимальная сумма
+                        tr
+                            td
+                                p.online-business-investment-products__ratio Соотношение Риск/ Доходность
+                .online-business-investment-products__wrapper
+                    table
+                        tr
+                            td
+                                .online-business-investment-products__name-wrapper
+                                    svg.svg-icon.icon-logo.online-business-investment-products__logo
+                                        use(xlink:href="./assets/img/logo.svg#logo")
+                                    h4.online-business-investment-products__name Unitrust Capital
+                        tr
+                            td                        
+                                p.online-business-investment-products__rate до 24%
+                        tr
+                            td                        
+                                p.online-business-investment-products__insurance До 5 млн. рублей
+                        tr
+                            td
+                                p.online-business-investment-products__amount От 250 тыс. рублей
+                        tr
+                            td
+                                p.online-business-investment-products__ratio Умеренный риск, средняя доходность
+                .online-business-investment-products__wrapper
+                    table
+                        tr
+                            td
+                                .online-business-investment-products__name-wrapper
+                                    svg.svg-icon.icon-sberbank.online-business-investment-products__logo
+                                        use(xlink:href="./assets/img/sprite.svg#sberbank")
+                                    h4.online-business-investment-products__name Банк
+                        tr
+                            td
+                                p.online-business-investment-products__rate 8%
+                        tr
+                            td
+                                p.online-business-investment-products__insurance На 1,4 млн. рублей
+                        tr
+                            td
+                                p.online-business-investment-products__amount От 10 тыс. рублей
+                        tr
+                            td
+                                p.online-business-investment-products__ratio Низкий риск, низкая доходность
+                .online-business-investment-products__wrapper.online-business-investment-products__md
+                    table
+                        tr
+                            td
+                                .online-business-investment-products__name-wrapper
+                                    svg.svg-icon.icon-params.online-business-investment-products__params
+                                        use(xlink:href="./assets/img/sprite.svg#params")
+                                    h4.online-business-investment-products__name Параметр сравнения  
+                        tr
+                            td
+                                p.online-business-investment-products__rate Ставка 
+                        tr
+                            td
+                                p.online-business-investment-products__insurance Страховка
+                        tr
+                            td
+                                p.online-business-investment-products__amount Минимальная сумма
+                        tr
+                            td
+                                p.online-business-investment-products__ratio Соотношение Риск/ Доходность
+                .online-business-investment-products__wrapper
+                        table
+                            tr
+                                td
+                                    .online-business-investment-products__name-wrapper
+                                        img.online-business-investment-products__logo(src="./assets/img/moneyman.png", alt="logo")
+                                        h4.online-business-investment-products__name Микрофинансовая компания
+                            tr
+                                td
+                                    p.online-business-investment-products__rate 20% 
+                            tr
+                                td
+                                    p.online-business-investment-products__insurance Неизвестно
+                            tr
+                                td
+                                    p.online-business-investment-products__amount От 1,5 млн. рублей
+                            tr
+                                td
+                                    p.online-business-investment-products__ratio Высокий риск, высокая доходность
+                .online-business-investment-products__wrapper
+                    table
+                        tr
+                            td
+                                .online-business-investment-products__name-wrapper
+                                    img.online-business-investment-products__logo(src="./assets/img/teletrade.png", alt="logo")
+                                    h4.online-business-investment-products__name Инвестиционная компания
+                        tr
+                            td
+                                p.online-business-investment-products__rate от 0%
+                        tr
+                            td
+                                p.online-business-investment-products__insurance Нет страховки
+                        tr
+                            td
+                                p.online-business-investment-products__amount от 500 рублей
+                        tr
+                            td
+                                p.online-business-investment-products__ratio Высокий риск, непрогнозируемая доходность
+            .row
+                .col-12.d-flex.justify-content-center
+                    button.online-business-investment-products__btn(type='submit') КАК ФОРМИРУЕТСЯ ДОХОД

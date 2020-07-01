@@ -1,0 +1,19 @@
+siteTitle: "howWeAreWorking"
+siteTagline: "Site howWeAreWorkingg"
+
+contentHeaderWorking:
+  title: Главная
+  breadcrumbs: —
+  subtitle: Инвесторам
+  headear: Как мы работаем
+  item:
+    - texts: Условия
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Как мы работаем
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Как формируется доход
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Инвестиционные сделки
+      links: http://lexus24v.beget.tech/about.html
+    - texts: Раскрытие информации
+      links: http://lexus24v.beget.tech/about.html

@@ -1,0 +1,18 @@
+extends ./base.pug
+
+include ../blocks/content-header/content-header.pug
+include ../blocks/disclosure/disclosure.pug
+include ../blocks/contract/contract.pug
+include ../blocks/trading-floors/trading-floors.pug
+include ../blocks/requisites/requisites.pug
+include ../blocks/remodal/remodal.pug
+
+block page
+	+header.header--information
+	+content-header(data.contentHeaderTemplate, 'template')
+	block main
+		| enter block
+		//- +disclosure(data.disclosure, 0)
+	+footer
+	+footer-bottom
+	+remodal

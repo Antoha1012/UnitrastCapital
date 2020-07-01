@@ -1,0 +1,89 @@
+//-
+    name: how-second
+    description: Markup for the how second block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin how-second(props = {})  
+    .how.second
+        .row
+            .padding
+                .column
+                    .how__top
+                        h2.how__title
+                            | Как начать инвестировать?
+                        a.how__region-link.how__region-link_desktop.arrow-link(href='javascript:void(0);', data-toggle-link='', data-selector='.how__region_desktop', data-toggle='_active')
+                            span.how__region-text.arrow-link__text.region
+                                svg.svg-icon.icon-geo
+                                    use(xlink:href='./assets/img/sprite.svg#geo')
+                                |  Инвесторам из регионов
+                        .how__region.how__region_desktop.how-region
+                            ul.how-region__items
+                                li.how-region__item
+                                    .how-region__number
+                                        | 01
+                                    .how-region__text
+                                        | Все условия договора согласовываются по электронной почте. Оригиналы
+                                        | документов вы
+                                        | получите по почте в течение трех дней
+                                li.how-region__item
+                                    .how-region__number
+                                        | 02
+                                    .how-region__text
+                                        | Внесите сумму инвестиций на наш расчетный счет в Сбербанке и уже
+                                        | через месяц получите
+                                        | первую выплату процентов на карту
+                    .how__main
+                        ul.how__items
+                            li.how__item
+                                .how__wrapper
+                                    .how__number
+                                        | 01
+                                    .how__arrow
+                                .how__name
+                                    | Первичное обращения
+                                .how__text.how__text--padding
+                                    a.how__link(href='https://unitrust.capital/request/consult', title='Оставьте заявку', data-modal='')
+                                        | Оставьте заявку
+                                    |  на сайте, свяжитесь с нами по телефону, или приезжайте
+                                    |  в офис, чтобы получить персональное инвестиционное предложение
+                            li.how__item
+                                .how__wrapper
+                                    .how__number
+                                        | 02
+                                    .how__arrow
+                                .how__name
+                                    | Бесплатная консультация
+                                .how__text.how__text--padding Приезжайте в офис с паспортом и свидетельством ИНН, или пригласите нашего специалиста к себе, чтобы оформить полный пакет документов
+                            li.how__item
+                                .how__wrapper
+                                    .how__number
+                                        | 03
+                                    .how__arrow
+                                .how__name
+                                    | Подбор и приобритения онлайн бизнес
+                                .how__text.how__text--padding Внесите наличные денежные средства в кассу компании или оформите безналичный перевод через любое ближайшее отделение Сбербанка
+                            li.how__item
+                                .how__wrapper
+                                    .how__number
+                                        | 04
+                                    .how__arrow
+                                .how__name
+                                    | Получения прибыли
+                                .how__text.how__text--padding Получайте ежемесячные выплаты процентов наличными в офисе или на карту в любом банке. Накапливайте проценты, чтобы получить повышенный доход
+                        .how__region.how__region_mobile.how-region
+                            ul.how-region__items
+                                li.how-region__item
+                                    .how-region__number
+                                        | 01
+                                    .how-region__text
+                                        | Все условия договора согласовываются по электронной почте. Оригиналы
+                                        | документов вы
+                                        | получите по почте в течение трех дней
+                                li.how-region__item
+                                    .how-region__number
+                                        | 02
+                                    .how-region__text
+                                        | Внесите сумму инвестиций на наш расчетный счет в Сбербанке и уже
+                                        | через месяц получите
+                                        | первую выплату процентов на карту

@@ -1,0 +1,32 @@
+//-
+	name: how-we-are-working-it
+	description: Markup for the how we are working it block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin how-we-are-working-it(props = {})
+	.how-we-are-working-it
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-4.d-xl-block.col-xl-4
+					.about-china__images
+						img.about-china__man(src="./assets/img/china.png", alt="")
+				.d-none.d-lg-block.col-lg-4.d-xl-block.col-xl-4
+					.about-china__info
+						p.about-china__names Алексей Иванов
+						p.about-china__information  Руководитель департамента управления бизнеса
+				.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+					.about-china__blog
+						a.how-we-are-working-china__btn(href="") Услуги
+						h2.about-china__tittle 
+							| Управление и развитие
+							br
+							| вашего IT бизнеса
+						p.about-china__subtittle При продаже инвестиционного пая Вам необходимо иметь (открыть, если нет) банковский счет, куда будут перечислены средства от погашения пая. Затем Вы подаете заявку на
+						.how-we-are-working-it__page
+							button.about-china__knopka Развитие и монетизация бизнеса
+								svg.svg-icon.icon-contacts
+									use(xlink:href='./assets/img/contact.svg#contacts')
+							button.about-china__knopka управления бизнесом
+								svg.svg-icon.icon-contacts
+									use(xlink:href='./assets/img/contact.svg#contacts')

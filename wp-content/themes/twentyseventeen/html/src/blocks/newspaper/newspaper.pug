@@ -1,0 +1,19 @@
+//-
+    name: newspaper
+    description: Markup for the newspaper block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin newspaper(props = {})
+    .newspaper
+        .row
+            .column
+                .newspaper__inner
+                    .newspaper__empty-wrapper
+                    .newspaper__info-container
+                        img.newspaper__logo(src='https://unitrust.capital/static/images/buisnes.png', alt='Buisnes')
+                        h2.newspaper__title Роман Григорян: IT-бизнес демонстрирует динамику надежного роста
+                        .newspaper__footnote Объединив ресурсы частных и корпоративных инвесторов, мы планируем масштабировать наш бизнес, увеличив активы компании, путем выкупа объектов на торгах по банкротству, до 1,5 миллиардов рублей в течение ближайших 2 лет...
+                        a.newspaper__link(href='https://business71.ru/fn_38384.html', target='_blank') Читать полностью
+
+        

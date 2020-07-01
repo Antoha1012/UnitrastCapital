@@ -1,0 +1,187 @@
+mixin index-slider(props = {})
+    #main.layout__main
+        .index-slider
+            .index-slider__arrows
+                //- ul.arrows-slider
+                    li.arrows-slider__item.arrows-slider__left(data-index-left='')
+                        a.arrows-slider__link(href='javascript:void(0)')
+                            span.arrows-slider__icon
+                                svg.svg-icon.icon-left-arrow
+                                    use(xlink:href='./assets/img/sprite.svg#left-arrow')
+                    li.arrows-slider__item.arrows-slider__right(data-index-right='')
+                        a.arrows-slider__link(href='javascript:void(0)')
+                            span.arrows-slider__icon
+                                svg(width='12px', height='18px', viewBox='0 0 12 18', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                // Generator: Sketch 53 (72520) - https://sketchapp.com
+                                title Path 2 Copy 3
+                                desc Created with Sketch.
+                                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                    g(id='о-компании', transform='translate(-1278.000000, -905.000000)', stroke='#3EA6E7', stroke-width='3')
+                                        g#Group-10(transform='translate(770.000000, 528.000000)')
+                                            g#Group-9(transform='translate(426.000000, 362.000000)')
+                                                polyline#Path-2-Copy-3(transform='translate(87.162598, 24.000000) rotate(-360.000000) translate(-87.162598, -24.000000) ', points='83.2485786 16.9441302 91.1315244 23.9755119 83.1936709 31.0558698')
+            .index-slider__slides(data-index-slider='')
+                .index-slider__slide
+                    .index-slider__bg(style="background-image: url('https://unitrust.capital/media/Main/Slide/2020-03-31/images-unitrust200.jpg')")
+                    .row.index-slider__row
+                        .column.large-12.index-slider__column
+                            .index-slider__content
+                                .index-slider__content-top
+                                    .index-slider__title-wrapper
+                                        .index-slider__title.title Сохраните свои сбережения в кризис!
+                                    .index-slider__description
+                                        p.p1 Инвестиции в торги по банкротству - наиболее актуальный способ сохранить и приумножить свои сбережения в периоды экономических кризисов
+                                .index-slider__content-bottom
+                                    .index-slider__recall
+                                        form.index-slider__form.request-form(action='/request/recall', method='post', data-ajax-form='RecallForm')
+                                            .index-slider__data
+                                                .index-slider__form-wrapper
+                                                    .index-slider__form-data
+                                                        input#i_5ed36e87f1ad4_RecallForm_phone.required(type='text', value='', name='RecallForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    button.index-slider__form-button.button(type='submit') перезвоните мне
+                                                .index-slider__form-policy Отправляя форму, вы соглашаетесь с 
+                                                    a.index-slider__form-policy-link.link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', target='_blank')
+                                                        span.index-slider__text политикой конфиденциальности
+                                            .request-form__success
+                                                .recall-success__data
+                                                    .recall-success__icon
+                                                        svg.svg-icon.icon-success
+                                                            use(xlink:href='./assets/img/sprite.svg#success')
+                                                    .recall-success__wrapper
+                                                        .recall-success__title Вы успешно оставили заявку!
+                                                        .recall-success__subtitle 
+                                                            | Наши специалисты свяжутся с Вами в рабочее 
+                                                            br
+                                                            | время в течение 15 минут
+                .index-slider__slide
+                    .index-slider__bg(style="background-image: url('https://unitrust.capital/media/Main/Slide/2019-10-25/%201.jpg')")
+                    .row.index-slider__row
+                        .column.large-12.index-slider__column
+                            .index-slider__content
+                                .index-slider__content-top
+                                    .index-slider__title-wrapper
+                                        .index-slider__title.title Инвестиции застрахованы в МОВС
+                                    .index-slider__description НКО «МОВС» осуществляет свою деятельность на основании лицензии Центрального Банка Российской Федерации (Банк России) ВС №4349 от от 28.02.2019 г.
+                                .index-slider__content-bottom
+                                    .index-slider__recall
+                                        form.index-slider__form.request-form(action='/request/recall', method='post', data-ajax-form='RecallForm')
+                                            .index-slider__data
+                                                .index-slider__form-wrapper
+                                                    .index-slider__form-data
+                                                        input#i_5ed36e87f20a5_RecallForm_phone.required(type='text', value='', name='RecallForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    button.index-slider__form-button.button(type='submit') перезвоните мне
+                                                .index-slider__form-policy Отправляя форму, вы соглашаетесь с 
+                                                    a.index-slider__form-policy-link.link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', target='_blank')
+                                                        span.index-slider__text политикой конфиденциальности
+                                            .request-form__success
+                                                .recall-success__data
+                                                    .recall-success__icon
+                                                        svg.svg-icon.icon-success
+                                                            use(xlink:href='./assets/img/sprite.svg#success')
+                                                    .recall-success__wrapper
+                                                    .recall-success__title  успешно оставили заявку!
+                                                    .recall-success__subtitle
+                                                        | Наши специалисты свяжутся с Вами в рабочее 
+                                                        br
+                                                        | время в течение 15 минут
+                                    .index-slider__mofs
+                                    img.index-slider__mofs-img(src='https://unitrust.capital/static/images/base/plashka-mofs.png', alt='/images/base/plashka-mofs.png')
+                .index-slider__slide
+                    .index-slider__bg(style="background-image: url('https://unitrust.capital/media/Main/Slide/2019-09-19/slide-3.jpg')")
+                    .row.index-slider__row
+                        .column.large-12.index-slider__column
+                            .index-slider__content
+                                .index-slider__content-top
+                                    .index-slider__title-wrapper
+                                        .index-slider__title.title 
+                                            | Пассивный доход
+                                            br
+                                            | 24% годовых
+                                    .index-slider__description
+                                        p Собственный онлайн бизнес - надежный и прогрессивный способ приумножить личные сбережения
+                                .index-slider__content-bottom
+                                    .index-slider__recall
+                                        form.index-slider__form.request-form(action='/request/recall', method='post', data-ajax-form='RecallForm')
+                                            .index-slider__data
+                                                .index-slider__form-wrapper
+                                                    .index-slider__form-data
+                                                        input#i_5ed36e87f2216_RecallForm_phone.required(type='text', value='', name='RecallForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    button.index-slider__form-button.button(type='submit') перезвоните мне
+                                                .index-slider__form-policy Отправляя форму, вы соглашаетесь с 
+                                                    a.index-slider__form-policy-link.link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', target='_blank')
+                                                        span.index-slider__text политикой конфиденциальности
+                                            .request-form__success
+                                                .recall-success__data
+                                                    .recall-success__icon
+                                                        svg.svg-icon.icon-success
+                                                            use(xlink:href='./assets/img/sprite.svg#success')
+                                                    .recall-success__wrapper
+                                                        .recall-success__title Вы успешно оставили заявку!
+                                                        .recall-success__subtitle
+                                                            | Наши специалисты свяжутся с Вами в рабочее 
+                                                            br
+                                                            | время в течение 15 минут
+                .index-slider__slide
+                    .index-slider__bg(style="background-image: url('https://unitrust.capital/media/Main/Slide/2020-04-01/%20unicorp.jpg')")
+                    .row.index-slider__row
+                        .column.large-12.index-slider__column
+                            .index-slider__content
+                                .index-slider__content-top
+                                    .index-slider__title-wrapper
+                                        .index-slider__title.title Инвестируйте комфортно и безопасно
+                                    .index-slider__description
+                                        p Гарантируем максимальную защиту Вашего капитала благодаря системе менеджмента рисков ISO 31000
+                                .index-slider__content-bottom
+                                    .index-slider__recall
+                                        form.index-slider__form.request-form(action='/request/recall', method='post', data-ajax-form='RecallForm')
+                                            .index-slider__data
+                                                .index-slider__form-wrapper
+                                                    .index-slider__form-data
+                                                        input#i_5ed36e87f236a_RecallForm_phone.required(type='text', value='', name='RecallForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    button.index-slider__form-button.button(type='submit') перезвоните мне
+                                                .index-slider__form-policy Отправляя форму, вы соглашаетесь с 
+                                                    a.index-slider__form-policy-link.link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', target='_blank')
+                                                        span.index-slider__text политикой конфиденциальности
+                                            .request-form__success
+                                                .recall-success__data
+                                                    .recall-success__icon
+                                                        svg.svg-icon.icon-success
+                                                            use(xlink:href='./assets/img/sprite.svg#success')
+                                                    .recall-success__wrapper
+                                                        .recall-success__title Вы успешно оставили заявку!
+                                                        .recall-success__subtitle
+                                                            | Наши специалисты свяжутся с Вами в рабочее 
+                                                            br
+                                                            | время в течение 15 минут
+                .index-slider__slide
+                    .index-slider__bg(style="background-image: url('https://unitrust.capital/media/Main/Slide/2020-04-01/6images-unitrust.jpg')")
+                    .row.index-slider__row
+                        .column.large-12.index-slider__column
+                            .index-slider__content
+                                .index-slider__content-top
+                                    .index-slider__title-wrapper
+                                        .index-slider__title.title Стабильно высокая прибыль
+                                    .index-slider__description
+                                        p.p1 По итогам 2019 года мы обеспечили среднюю доходность нашим инвесторам в размере 22% годовых
+                                .index-slider__content-bottom
+                                    .index-slider__recall
+                                        form.index-slider__form.request-form(action='/request/recall', method='post', data-ajax-form='RecallForm')
+                                            .index-slider__data
+                                                .index-slider__form-wrapper
+                                                    .index-slider__form-data
+                                                        input#i_5ed36e87f24b2_RecallForm_phone.required(type='text', value='', name='RecallForm[phone]', placeholder='Ваш номер телефона', data-lead-url='/request/lead', data-phone-field='')
+                                                    button.index-slider__form-button.button(type='submit') перезвоните мне
+                                                .index-slider__form-policy Отправляя форму, вы соглашаетесь с 
+                                                    a.index-slider__form-policy-link.link(href='https://unitrust.capital/media/Main/MainSettings/2020-03-13/91229006e03a28db3706d7be0c3b1d45.pdf', target='_blank')
+                                                        span.index-slider__text политикой конфиденциальности
+                                            .request-form__success
+                                                .recall-success__data
+                                                    .recall-success__icon
+                                                        svg.svg-icon.icon-success
+                                                            use(xlink:href='./assets/img/sprite.svg#success')
+                                                    .recall-success__wrapper
+                                                        .recall-success__title Вы успешно оставили заявку!
+                                                        .recall-success__subtitle
+                                                            | Наши специалисты свяжутся с Вами в рабочее 
+                                                            br
+                                                            | время в течение 15 минут

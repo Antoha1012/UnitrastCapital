@@ -1,0 +1,65 @@
+/**
+ * Styles for the profitability revenue generation block.
+ */
+ .background-popup {
+    background: rgba(36, 36, 36, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 100%;
+    z-index: 11;
+    display: none;
+}
+.profitability-revenue-generation {
+    background: #E5E5E5;
+    position: relative;
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        background-color: #EAF4FE;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 24px;
+    }
+
+    #btn {
+        font-size: 34px;
+        color: rgba(91, 105, 124, 0.6);
+        display: none;
+    }
+
+    #closebtn {
+        display: flex;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 44%;
+        transition: 1s;
+        z-index: 11;
+        width: 54px;
+        height: 54px;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    #main {
+        transition: margin-right .5s;
+        padding: 16px;
+        text-align: center;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+    }
+}

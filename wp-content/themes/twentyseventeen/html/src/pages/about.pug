@@ -1,0 +1,30 @@
+extends ../layouts/layout.pug
+
+include ../blocks/header/header.pug
+include ../blocks/content-header/content-header.pug
+include ../blocks/about-founders/about-founders.pug
+include ../blocks/about-history/about-history.pug
+include ../blocks/about-points/about-points.pug
+include ../blocks/about-workers/about-workers.pug
+include ../blocks/about-media-publications/about-media-publications.pug
+include ../blocks/about-sites/about-sites.pug
+include ../blocks/about-china/about-china.pug
+include ../blocks/how-second/how-second.pug
+include ../blocks/bottom-form/bottom-form.pug
+include ../blocks/footer/footer.pug
+include ../blocks/footer-bottom/footer-bottom.pug
+
+block page
+	+header
+	+content-header(data.contentHeaderAbout, 'about')
+	+about-founders
+	+about-history
+	+about-points
+	+about-workers
+	+about-media-publications
+	+about-sites
+	+about-china(data.ChinaTittleAbout)
+	+how-second
+	+bottom-form
+	+footer
+	+footer-bottom

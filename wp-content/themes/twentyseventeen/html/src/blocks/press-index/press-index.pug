@@ -1,0 +1,17 @@
+//-
+    name: press-index
+    description: Markup for the press index block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin press-index(props = {})
+    .press-index&attributes(attributes)
+        .press-index__head
+            .press-index__title.title.title_medium= props.title
+            .press-index__menu
+                ul.press-index__tabs.smart-tabs
+                    each item, index in props.items
+                        li(class= index === 0 ? '_active' : '' ).press-index__tab.smart-tab
+                            a.press-index__tab-link(href=item.link, title=item.name ? item.name : item.title)
+                                span.press-index__tab-name=item.title                
+        

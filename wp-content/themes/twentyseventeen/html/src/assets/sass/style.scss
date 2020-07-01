@@ -1,0 +1,28 @@
+// Partial imports
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+@import "../../blocks/remodal/remodal";
+
+// Block imports
+@import "../../blocks/common/page/page";
+@import "../../blocks/index-bill/index-bill.scss";
+@import "../../blocks/header/header";
+@import "../../blocks/slidebackground/slidebackground";
+@import "../../blocks/index-slider/index-slider";
+@import "../../blocks/how/how";
+@import "../../blocks/steps/steps";
+@import "../../blocks/relevant/relevant";
+@import "../../blocks/howsFirst/howsFirst";
+@import "../../blocks/how-second/how-second";
+@import "../../blocks/newspaper/newspaper";
+@import "../../blocks/index-about/index-about";
+@import "../../blocks/bottom-form/bottom-form";
+@import "../../blocks/calc-yield/calc-yield";
+@import "../../blocks/footer/footer";
+@import "../../blocks/footer-bottom/footer-bottom";
+@import "../../blocks/disclosure/disclosure";
+@import "../../blocks/content-header/content-header";
+
+// TODO: add code here

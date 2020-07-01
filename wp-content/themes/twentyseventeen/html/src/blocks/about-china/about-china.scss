@@ -1,0 +1,152 @@
+/**
+ * Styles for the about-china block.
+ */
+.about-china {
+    max-width: 100%;
+    background: #F6F7F9;
+
+    &__tittle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 31px;
+        color: #000000;
+        white-space: nowrap;
+        @media(max-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 22px;
+            white-space: pre-wrap;
+        }
+    }
+    &__title-text{
+        color: #3EA6E7;
+    }
+    .fa-chevron-right{
+        margin-left: 10px;
+    }
+    &__blocks {
+        background: #E5E8EE;
+        border-radius: 50px;
+        display: block;
+        margin-right: 16px;
+        width: 100%;
+        height: 100%;
+        padding: 8px 16px;
+        white-space: nowrap;
+        @media(max-width: 425px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__links {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        padding: 8px 16px;
+        color: #73808D;
+        &:hover {
+            text-decoration: none;
+            color: #73808D;
+        }
+
+    }
+
+    &__knopka {
+        background: #3EA6E7;
+        border-radius: 100px;
+        margin-top: 14px;
+        padding: 21px 62px 21px 51px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:hover {
+            background-color: #5CBCF8;
+        }
+
+    }
+
+
+
+    &__page {
+        margin-top: 27px;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 17px;
+
+        @media(max-width: 425px) {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+    &__blog {
+        margin-top: 162px;
+        margin-left: -230px;
+
+        @media(max-width: 991px) {
+            margin-left: 0px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__subtittle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: #626B71;
+        margin-top: 25px;
+        max-width: 533px;
+        width: 100%;
+
+        @media(max-width: 425px) {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        margin-top: 118px;
+        margin-left: -100px;
+    }
+
+    &__images {
+        margin-top: 86px;
+        margin-left: -56px;
+        margin-bottom: -6px;
+        overflow: hidden;
+    }
+
+    &__names {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #808080;
+    }
+
+    &__information {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        color: #808080;
+        margin-top: 13px;
+        max-width: 165px;
+    }
+}

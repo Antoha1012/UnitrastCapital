@@ -1,0 +1,318 @@
+.contact-item {
+    font-size: 18px
+}
+
+.contact-item__row {
+    display: flex;
+    align-items: center
+}
+
+.contact-item a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333
+}
+
+.contact-item__desc {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px
+}
+
+.contact-item__icon {
+    flex-shrink: 0;
+    margin-right: 10px
+}
+
+.contact-item__icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #9ba7ca
+}
+
+.footer__text {
+    margin-bottom: 30px
+}
+
+.footer__text .typography {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #909090
+}
+
+.footer__text .typography p {
+    margin: 8px 0
+}
+
+.footer__logo {
+    max-width: 150px
+}
+
+.footer__logo img {
+    display: block;
+    max-width: 100%
+}
+
+.footer__copyright {
+    text-align: right;
+    font-size: 13px;
+    color: #909090;
+    padding: 0 0 30px
+}
+
+@media screen and (max-width: 1100px) {
+    .footer__copyright {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__copyright {
+        text-align: left
+    }
+}
+
+.footer__bottom {
+    padding: 20px 0 30px;
+    color: #909090;
+    border-top: 1px solid #c4d3ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 992px) {
+    .footer__bottom {
+        border: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__bottom {
+        flex-wrap: wrap;
+        padding-top: 30px
+    }
+}
+
+.footer__bottom-links {
+    font-size: 12px
+}
+
+@media screen and (max-width: 767px) {
+    .footer__bottom-links {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 30px
+    }
+}
+
+.footer__bottom-links a {
+    padding: 0 15px 0 0;
+    margin-right: 8px;
+    color: #676d80;
+    border-right: 1px solid #c4d3ee;
+    font-size: 10px;
+}
+.footer__text .link, .typography a {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0347c8;
+    position: relative;
+    padding: 0 0 4px;
+    display: inline-flex;
+    align-items: center;
+}
+.footer__bottom-links li {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.footer__bottom-links li:first-child a {
+    padding-left: 0
+}
+
+.footer__bottom-links li:last-child a {
+    border: none
+}
+
+.mobile-main-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, .5);
+    transition: all .3s cubic-bezier(.6, .2, .1, 1);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    display: none
+}
+
+.mobile-main-menu .contact-item a {
+    font-weight: 500;
+    font-size: 22px
+}
+
+@media screen and (max-width: 1100px) {
+    .mobile-main-menu {
+        display: block
+    }
+}
+
+.mobile-main-menu__close-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 -15px
+}
+
+.mobile-main-menu__close-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: #0347c8
+}
+
+.mobile-main-menu__nav {
+    margin-bottom: 40px
+}
+
+.mobile-main-menu__nav a {
+    display: block;
+    border-bottom: 1px solid #c4d3ee;
+    padding: 18px 15px;
+    color: #333
+}
+
+.mobile-main-menu__panel {
+    width: calc(100% - 60px);
+    max-width: 350px;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .3s cubic-bezier(.6, .2, .1, 1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-999px);
+    padding: 0 20px 30px;
+    overflow-y: auto
+}
+
+.mobile-main-menu__panel-top {
+    padding: 10px 0;
+    border-bottom: 1px solid #c4d3ee
+}
+
+.container {
+    position: relative;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1100px
+    }
+}
+
+* {
+    box-sizing: border-box
+}
+
+.block-margins,
+.typography .h1,
+.typography .h2,
+.typography .h3,
+.typography .h4,
+.typography .h5,
+.typography .h6,
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6,
+.typography ol,
+.typography p,
+.typography pre,
+.typography table,
+.typography ul {
+    margin: 20px 0
+}
+
+@media screen and (max-width: 992px) {
+
+    .block-margins,
+    .typography .h1,
+    .typography .h2,
+    .typography .h3,
+    .typography .h4,
+    .typography .h5,
+    .typography .h6,
+    .typography h1,
+    .typography h2,
+    .typography h3,
+    .typography h4,
+    .typography h5,
+    .typography h6,
+    .typography ol,
+    .typography p,
+    .typography pre,
+    .typography table,
+    .typography ul {
+        margin: 15px 0
+    }
+}
+
+.typography {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-weight: 400
+}
+
+@media screen and (max-width: 767px) {
+    .typography {
+        font-size: 13px
+    }
+}
+
+.typography p:first-child {
+    margin-top: 0
+}
+
+.typography p:last-child {
+    margin-bottom: 0
+}
+
+.typography>:first-child {
+    margin-top: 0
+}
+
+.typography>:last-child {
+    margin-bottom: 0
+}
+
+.typography a {
+    font-size: inherit
+}

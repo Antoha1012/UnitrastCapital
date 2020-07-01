@@ -1,0 +1,285 @@
+//-
+	name: faq
+	description: Markup for the faq block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin detailed-business-description-faq(props = {})
+	.detailed-business-description-faq
+		#main.layout__main
+			.row
+				.column.large-12
+					.top__content
+						h2.top__title Общая информация
+			.layout__content
+				.row
+					.column.large-12
+						.answer
+							ul.answer__list.answers-list
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какая минимальная сумма инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												p
+													| Минимальная сумма инвестиций (номинал векселя) составляет 250 000 ₽ для частных инвесторов по процентным векселям и 500 000 ₽ для корпоративных инвесторов по дисконтным векселям.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Возможно ли пополнение суммы инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Увеличение суммы инвестиций возможно за счет приобретения дополнительных векселей в порядке и на условиях, определенных вексельной программой.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Могу ли я инвестировать в вашу компанию, если я не из Москвы?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Инвестировать в торги по банкротству и получать гарантированный пассивный доход вместе с компанией Юнитраст Кэпитал может любой желающий, независимо от места его проживания. Все существенные условия сотрудничества могут быть согласованы по телефону, после чего мы направляем вам по почте либо с курьером полный пакет документов на подпись, а вы перечисляете сумму инвестиций на расчетный счет компании через любое ближайшее отделение Сбербанка. Выплаты процентного дохода и возврат суммы инвестиций осуществляются также дистанционно, путем перевода на ваш лицевой счет в любом банке.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Можно ли досрочно забрать свои деньги?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Досрочный возврат денежных средств, инвестированных в вексельную программу, возможен путем реализации векселей на вторичном рынке, либо обратного выкупа векселей компанией с дисконтом, который оговаривается индивидуально с каждым векселедержателем.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какой минимальный срок размещения денежных средств?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Минимальный срок размещения денежных средств (срок погашения векселя) составляет 6 месяцев для процентных векселей и 12 месяцев для дисконтных векселей. При этом Вам не обязательно изымать свои инвестиции из оборота компании в установленный срок. Вы можете оставить свою сумму на балансе компании, и продолжать получать пассивный доход на согласованных ранее условиях.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Каков порядок выплаты процентов по процентным векселям?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Вы самостоятельно выбираете порядок выплаты процентов по векселю. В зависимости от того, хотите ли Вы получать стабильные периодические выплаты в течение всего срока обращения векселя, или получить повышенную доходность, выплаты процентов могут производиться ежемесячно, ежеквартально, ежегодно или в конце срока, при погашении векселя. Выплата процентов в конце срока обеспечит Вам дополнительные 2% сверх базовой процентной ставки. Выплаты процентов могут производиться как наличными в офисе компании, так и путем перечисления денежных средств на Ваш банковский счет.
+						.top__content
+							h2.top__title Информация о продавце
+			.layout__content
+				.row
+					.column.large-12
+						.answer
+							ul.answer__list.answers-list
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какая минимальная сумма инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												p
+													| Минимальная сумма инвестиций (номинал векселя) составляет 250 000 ₽ для частных инвесторов по процентным векселям и 500 000 ₽ для корпоративных инвесторов по дисконтным векселям.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Возможно ли пополнение суммы инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Увеличение суммы инвестиций возможно за счет приобретения дополнительных векселей в порядке и на условиях, определенных вексельной программой.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Могу ли я инвестировать в вашу компанию, если я не из Москвы?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Инвестировать в торги по банкротству и получать гарантированный пассивный доход вместе с компанией Юнитраст Кэпитал может любой желающий, независимо от места его проживания. Все существенные условия сотрудничества могут быть согласованы по телефону, после чего мы направляем вам по почте либо с курьером полный пакет документов на подпись, а вы перечисляете сумму инвестиций на расчетный счет компании через любое ближайшее отделение Сбербанка. Выплаты процентного дохода и возврат суммы инвестиций осуществляются также дистанционно, путем перевода на ваш лицевой счет в любом банке.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Можно ли досрочно забрать свои деньги?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Досрочный возврат денежных средств, инвестированных в вексельную программу, возможен путем реализации векселей на вторичном рынке, либо обратного выкупа векселей компанией с дисконтом, который оговаривается индивидуально с каждым векселедержателем.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какой минимальный срок размещения денежных средств?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Минимальный срок размещения денежных средств (срок погашения векселя) составляет 6 месяцев для процентных векселей и 12 месяцев для дисконтных векселей. При этом Вам не обязательно изымать свои инвестиции из оборота компании в установленный срок. Вы можете оставить свою сумму на балансе компании, и продолжать получать пассивный доход на согласованных ранее условиях.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Каков порядок выплаты процентов по процентным векселям?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Вы самостоятельно выбираете порядок выплаты процентов по векселю. В зависимости от того, хотите ли Вы получать стабильные периодические выплаты в течение всего срока обращения векселя, или получить повышенную доходность, выплаты процентов могут производиться ежемесячно, ежеквартально, ежегодно или в конце срока, при погашении векселя. Выплата процентов в конце срока обеспечит Вам дополнительные 2% сверх базовой процентной ставки. Выплаты процентов могут производиться как наличными в офисе компании, так и путем перечисления денежных средств на Ваш банковский счет.
+						.top__content
+							h2.top__title Трафик и маркетинг
+			.layout__content
+				.row
+					.column.large-12
+						.answer
+							ul.answer__list.answers-list
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какая минимальная сумма инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												p
+													| Минимальная сумма инвестиций (номинал векселя) составляет 250 000 ₽ для частных инвесторов по процентным векселям и 500 000 ₽ для корпоративных инвесторов по дисконтным векселям.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Возможно ли пополнение суммы инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Увеличение суммы инвестиций возможно за счет приобретения дополнительных векселей в порядке и на условиях, определенных вексельной программой.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Могу ли я инвестировать в вашу компанию, если я не из Москвы?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Инвестировать в торги по банкротству и получать гарантированный пассивный доход вместе с компанией Юнитраст Кэпитал может любой желающий, независимо от места его проживания. Все существенные условия сотрудничества могут быть согласованы по телефону, после чего мы направляем вам по почте либо с курьером полный пакет документов на подпись, а вы перечисляете сумму инвестиций на расчетный счет компании через любое ближайшее отделение Сбербанка. Выплаты процентного дохода и возврат суммы инвестиций осуществляются также дистанционно, путем перевода на ваш лицевой счет в любом банке.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Можно ли досрочно забрать свои деньги?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Досрочный возврат денежных средств, инвестированных в вексельную программу, возможен путем реализации векселей на вторичном рынке, либо обратного выкупа векселей компанией с дисконтом, который оговаривается индивидуально с каждым векселедержателем.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какой минимальный срок размещения денежных средств?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Минимальный срок размещения денежных средств (срок погашения векселя) составляет 6 месяцев для процентных векселей и 12 месяцев для дисконтных векселей. При этом Вам не обязательно изымать свои инвестиции из оборота компании в установленный срок. Вы можете оставить свою сумму на балансе компании, и продолжать получать пассивный доход на согласованных ранее условиях.
+						.top__content
+							h2.top__title Финансы
+			.layout__content
+				.row
+					.column.large-12
+						.answer
+							ul.answer__list.answers-list
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какая минимальная сумма инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												p
+													| Минимальная сумма инвестиций (номинал векселя) составляет 250 000 ₽ для частных инвесторов по процентным векселям и 500 000 ₽ для корпоративных инвесторов по дисконтным векселям.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Возможно ли пополнение суммы инвестиций?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Увеличение суммы инвестиций возможно за счет приобретения дополнительных векселей в порядке и на условиях, определенных вексельной программой.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Могу ли я инвестировать в вашу компанию, если я не из Москвы?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Инвестировать в торги по банкротству и получать гарантированный пассивный доход вместе с компанией Юнитраст Кэпитал может любой желающий, независимо от места его проживания. Все существенные условия сотрудничества могут быть согласованы по телефону, после чего мы направляем вам по почте либо с курьером полный пакет документов на подпись, а вы перечисляете сумму инвестиций на расчетный счет компании через любое ближайшее отделение Сбербанка. Выплаты процентного дохода и возврат суммы инвестиций осуществляются также дистанционно, путем перевода на ваш лицевой счет в любом банке.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Можно ли досрочно забрать свои деньги?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Досрочный возврат денежных средств, инвестированных в вексельную программу, возможен путем реализации векселей на вторичном рынке, либо обратного выкупа векселей компанией с дисконтом, который оговаривается индивидуально с каждым векселедержателем.
+								li.answers-list__item.white-block.white-block_shadow(data-accordion-item='')
+									.answer-block
+										a.answer-block__link(href='javascript:void(0)')
+											span.answer-block__title Какой минимальный срок размещения денежных средств?
+											span.answer-block__plus-wrapper
+												span.answer-block__container
+													span.answer-block__plus
+													span.answer-block__minus
+										.answer-block__content(data-target='')
+											article
+												| Минимальный срок размещения денежных средств (срок погашения векселя) составляет 6 месяцев для процентных векселей и 12 месяцев для дисконтных векселей. При этом Вам не обязательно изымать свои инвестиции из оборота компании в установленный срок. Вы можете оставить свою сумму на балансе компании, и продолжать получать пассивный доход на согласованных ранее условиях.

@@ -1,0 +1,32 @@
+//-
+	name: profitability-profitable-advertising
+	description: Markup for the profitable advertising block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin profitability-profitable-advertising(props = {})
+	.profitability-profitable-advertising
+		.row
+			.column
+				.profitability-profitable-advertising__blocks
+					.profitability-profitable-advertising__block
+						h2.profitability-profitable-advertising__title Только самая прибыльная реклама
+						p.profitability-profitable-advertising__text Высокие стандарты и развивающийся рынок рекламных технологий. Получайте пассивный доход в рублях или валюте от мировых компаний и брендов!
+						a.index-bill__arrow-link.arrow-link.innovation__link.profitability-profitable-advertising__btn(href='profitability.html')
+							span.arrow-link__text Как устроена реклама в интернете
+							span.arrow-link__arrow
+								i.fas.fa-chevron-right(aria-hidden='true')
+		.profitability-profitable-advertising__images
+			marquee(scrollamount="10", behavior="alternate")
+				img(src="./assets/img/kredit-nal.jpg", alt="")
+				img(src="./assets/img/mvideo.png", alt="")
+				img(src="./assets/img/kreditnaya-karta.png", alt="")
+				img(src="./assets/img/kredit-nal.jpg", alt="")
+				img(src="./assets/img/kreditnaya-karta.png", alt="")
+				img(src="./assets/img/kredit-nal.jpg", alt="")
+				img(src="./assets/img/kreditnaya-karta.png", alt="")
+				img(src="./assets/img/mvideo.png", alt="")
+		.position-rel
+			picture.carousel-static
+				source(media='(max-width: 768px)')
+				img(alt='', srcset='./assets/img/carousel-static_m_1x.png')

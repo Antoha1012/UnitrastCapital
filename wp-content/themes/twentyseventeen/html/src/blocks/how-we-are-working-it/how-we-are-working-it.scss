@@ -1,0 +1,35 @@
+/**
+ * Styles for the how we are working it block.
+ */
+.how-we-are-working-it {
+    .about-china__knopka {
+        background: #3EA6E7;
+        border-radius: 100px;
+        padding: 21px 23px 21px 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: #fff;
+        &:hover {
+            background-color: #5CBCF8;
+        }
+    }
+
+    .about-china__info {
+        margin-top: 164px;
+        margin-left: -100px;
+    }
+
+    &__page {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        margin-top: 29px;
+        width: 100%;
+    }
+}

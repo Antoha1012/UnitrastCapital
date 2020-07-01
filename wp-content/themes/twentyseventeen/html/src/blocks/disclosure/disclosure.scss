@@ -1,0 +1,39 @@
+@media (max-width: 1229px) {
+    .disclosure-page__form-input::before {
+        width: 0;
+    }
+}
+
+@media (min-width: 1230px) {
+
+    .disclosure .title_medium{
+        font-size: 30px;
+    }
+}
+
+.disclosure .disclosure-page-linkall {
+    display: flex;
+    width: 100%;
+    padding: 50px 60px;
+}
+
+@media (min-width: 1230px) {
+    .disclosure .disclosure-page__document-item {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:768px ){
+    .disclosure .disclosure-page-linkall {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1229px) and (min-width: 768px) {
+    .disclosure-page__document-item {
+        padding: 0;
+        margin-bottom: 22px;
+    }
+}

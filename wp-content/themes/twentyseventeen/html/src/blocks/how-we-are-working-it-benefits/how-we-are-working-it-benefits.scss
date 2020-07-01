@@ -1,0 +1,64 @@
+/**
+ * Styles for the how we are working it benefits block.
+ */
+.how-we-are-working-it-benefits {
+    width: 100%;
+    height: auto;
+    background: url('../img/780bc432eddf02b0bf643e5166aaf148.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrap {
+        background: rgba(69, 78, 112, 0.7);
+        padding-bottom: 152px;
+    }
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__block {
+        margin-right: 91px;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 31px;
+        padding-top: 87px;
+        color: #FAFAFA;
+    }
+
+    &__subtitle {
+        margin-top: 42px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 26px;
+        color: #FAFAFA;
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 26px;
+        color: #FAFAFA;
+    }
+
+    .about-china__knopka {
+        margin-top: 112px;
+
+        &:hover {
+            background-color: #5CBCF8;
+        }
+    }
+}

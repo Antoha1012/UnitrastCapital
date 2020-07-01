@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="67px" viewBox="0 0 58 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="вексельная-программа-гарантии" transform="translate(-195.000000, -2169.000000)">
+            <g id="Group-10-Copy-10" transform="translate(150.000000, 1819.000000)">
+                <g id="Group-4" transform="translate(45.000000, 350.000000)">
+                    <g id="Group-3">
+                        <path d="M2,0 L42,0 L58,16.0166016 L58,65 C58,66.1045695 57.1045695,67 56,67 L2,67 C0.8954305,67 1.3527075e-16,66.1045695 0,65 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Rectangle" fill="#EAF4FE"></path>
+                        <polygon id="Rectangle" fill="#BDDAF3" points="42 0 58 16 42 16"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

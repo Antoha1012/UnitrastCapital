@@ -1,0 +1,48 @@
+//-
+    name: send-request
+    description: Markup for the send request block.
+    arguments:
+        - {object} props - Block properties.
+
+mixin send-request(props = {})
+    .send-request&attributes(attributes)
+        .container
+            a( href="#modal") open
+            .send-request__wrapper.remodal(data-remodal-id="modal")
+                .send-request__clouse-wrapper
+                    button.send-request__clouse.remodal-close(data-remodal-action="close") <i class="fas fa-times"></i>
+                .row
+                    .col-lg-4
+                        img.send-request__img(src="../assets/img/man-send-request.png", alt="man")
+                    .col-12.col-lg-8
+                        h3.send-request__title Оставьте заявку, чтобы получить консультацию дистанционно!
+                        form.send-request__form.request-form(action="/request/recall")
+                            .send-request__date
+                                input.send-request__input.required(type="text" placeholder="Как вас зовут?")
+                                input.send-request__input(id="maskphone" type="tel" placeholder="+7 (___) __-__-___")                                
+                                button.send-request__btn(type="submit") ОТПРАВИТЬ
+                            .send-request__network-wrapper
+                                p.send-request__network-txt  В каком мессенжере вам удобно получить консультацию?
+                                .send-request__network-check
+                                    input(type="radio" id="telegram" name="network" value="telegram")
+                                    label(for="telegram").send-request__network.send-request__telegram.send-request__telegram-default
+                                        <i class="fab fa-telegram-plane"></i>
+                                    input(type="radio" id="phone" name="network" value="phone")
+                                    label(for="phone").send-request__network.send-request__phone
+                                        img.send-request__network-phone-size(src="../assets/img/phone-send-request.svg", alt="")
+                                    input(type="radio" id="whatsapp" name="network" value="whatsapp")
+                                    label(for="whatsapp").send-request__network.send-request__whatsapp
+                                        <i class="fab fa-whatsapp"></i>
+                                    input(type="radio" id="skype" name="network" value="skype")
+                                    label(for="skype").send-request__network.send-request__skype
+                                        <i class="fab fa-skype"></i>
+                                button.send-request__btn.send-request__btn-formd(type="submit") ОТПРАВИТЬ
+                        .send-request__check-wrapper.d-flex
+                            img.send-request__check-icon(src="../assets/img/check.svg", alt="")
+                            p.send-request__check-txt Мы гарантируем безопасность и сохранность ваших данных
+                        p.send-request__txt-first Мы в рабочем режиме и всегда на связи!
+                        p.send-request__txt-second Поможем продать или купить готовый онлайн бизнес, не выходя из дому
+
+            
+
+
